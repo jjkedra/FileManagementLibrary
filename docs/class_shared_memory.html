@@ -110,7 +110,7 @@ Public Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00018">18</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00014">14</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ababe7d2a63c457e92a7bae8c78937204" name="ababe7d2a63c457e92a7bae8c78937204"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ababe7d2a63c457e92a7bae8c78937204">&#9670;&#160;</a></span>SharedMemory()</h2>
@@ -136,27 +136,27 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00023">23</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   23</span>                                   {</div>
-<div class="line"><span class="lineno">   24</span>    key_t shm_key = ftok(<a class="code hl_function" href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a>().c_str(), 1);</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keywordflow">if</span> (shm_key == (key_t) -1) {</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;ftok() for shm failed&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordtype">int</span> shm_id = shmget(shm_key, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>), 0666 | flag);</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (shm_id == -1) {</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmget() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> = shmat(shm_id, <span class="keyword">nullptr</span>, 0);</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> == (<span class="keywordtype">void</span> *) -1) {</div>
-<div class="line"><span class="lineno">   36</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmat() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   37</span>    }</div>
-<div class="line"><span class="lineno">   38</span>}</div>
-<div class="ttc" id="a_ipc_8cpp_html_af6bfe3d4834a14652246db692a7a912d"><div class="ttname"><a href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a></div><div class="ttdeci">std::string getRootPath()</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00020">Ipc.cpp:20</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00019">19</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   19</span>                                   {</div>
+<div class="line"><span class="lineno">   20</span>    key_t shm_key = ftok(<a class="code hl_function" href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a>().c_str(), 1);</div>
+<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">if</span> (shm_key == (key_t) -1) {</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;ftok() for shm failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <span class="keywordtype">int</span> shm_id = shmget(shm_key, <span class="keyword">sizeof</span>(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>), 0666 | flag);</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (shm_id == -1) {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmget() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span> </div>
+<div class="line"><span class="lineno">   30</span>    <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> = shmat(shm_id, <span class="keyword">nullptr</span>, 0);</div>
+<div class="line"><span class="lineno">   31</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> == (<span class="keywordtype">void</span> *) -1) {</div>
+<div class="line"><span class="lineno">   32</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmat() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   33</span>    }</div>
+<div class="line"><span class="lineno">   34</span>}</div>
+<div class="ttc" id="a_ipc_8cpp_html_af6bfe3d4834a14652246db692a7a912d"><div class="ttname"><a href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a></div><div class="ttdeci">std::string getRootPath()</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00016">Ipc.cpp:16</a></div></div>
 <div class="ttc" id="aclass_library_exception_html"><div class="ttname"><a href="class_library_exception.html">LibraryException</a></div><div class="ttdef"><b>Definition</b> <a href="_library_exception_8h_source.html#l00007">LibraryException.h:7</a></div></div>
-<div class="ttc" id="aclass_shared_memory_html_ab86a5b3c930c11aabf3ab45711e84d42"><div class="ttname"><a href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">SharedMemory::shm_addr</a></div><div class="ttdeci">void * shm_addr</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00030">Ipc.h:30</a></div></div>
-<div class="ttc" id="astructlfs_1_1shm__payload_html"><div class="ttname"><a href="structlfs_1_1shm__payload.html">lfs::shm_payload</a></div><div class="ttdef"><b>Definition</b> <a href="_payload_8h_source.html#l00014">Payload.h:14</a></div></div>
+<div class="ttc" id="aclass_shared_memory_html_ab86a5b3c930c11aabf3ab45711e84d42"><div class="ttname"><a href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">SharedMemory::shm_addr</a></div><div class="ttdeci">void * shm_addr</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00026">Ipc.h:26</a></div></div>
+<div class="ttc" id="astructlfs_1_1shm__payload_html"><div class="ttname"><a href="structlfs_1_1shm__payload.html">lfs::shm_payload</a></div><div class="ttdef"><b>Definition</b> <a href="_payload_8h_source.html#l00010">Payload.h:10</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -185,12 +185,12 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00052">52</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                            {</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (shmdt(<a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a>) == -1) {</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmdt() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00048">48</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                            {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (shmdt(<a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a>) == -1) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;shmdt() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -210,10 +210,10 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00048">48</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                 {</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> (<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, buf);</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00044">44</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                 {</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> (<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, buf);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -418,11 +418,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00040">40</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   40</span>                                           {</div>
-<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> (<a class="code hl_struct" href="structlfs_1_1request.html">lfs::request</a> *) ((<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, req));</div>
-<div class="line"><span class="lineno">   42</span>}</div>
-<div class="ttc" id="astructlfs_1_1request_html"><div class="ttname"><a href="structlfs_1_1request.html">lfs::request</a></div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00063">Request.h:63</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00036">36</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                           {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">return</span> (<a class="code hl_struct" href="structlfs_1_1request.html">lfs::request</a> *) ((<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, req));</div>
+<div class="line"><span class="lineno">   38</span>}</div>
+<div class="ttc" id="astructlfs_1_1request_html"><div class="ttname"><a href="structlfs_1_1request.html">lfs::request</a></div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00059">Request.h:59</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -627,11 +627,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00044">44</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                                          {</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> (<a class="code hl_struct" href="structlfs_1_1result.html">lfs::result</a> *) ((<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, res));</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-<div class="ttc" id="astructlfs_1_1result_html"><div class="ttname"><a href="structlfs_1_1result.html">lfs::result</a></div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00009">Result.h:9</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00040">40</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   40</span>                                          {</div>
+<div class="line"><span class="lineno">   41</span>    <span class="keywordflow">return</span> (<a class="code hl_struct" href="structlfs_1_1result.html">lfs::result</a> *) ((<span class="keywordtype">char</span> *) <a class="code hl_variable" href="class_shared_memory.html#ab86a5b3c930c11aabf3ab45711e84d42">shm_addr</a> + offsetof(<a class="code hl_struct" href="structlfs_1_1shm__payload.html">lfs::shm_payload</a>, res));</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+<div class="ttc" id="astructlfs_1_1result_html"><div class="ttname"><a href="structlfs_1_1result.html">lfs::result</a></div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00005">Result.h:5</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -834,7 +834,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00030">30</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00026">26</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
 
 </div>
 </div>

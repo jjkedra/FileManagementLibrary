@@ -128,7 +128,7 @@ Private Member Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_libfs_8h_source.html#l00012">12</a> of file <a class="el" href="_libfs_8h_source.html">Libfs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_libfs_8h_source.html#l00008">8</a> of file <a class="el" href="_libfs_8h_source.html">Libfs.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="afbcc1cb3f53dd8b560c08f6dd78a62a7" name="afbcc1cb3f53dd8b560c08f6dd78a62a7"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afbcc1cb3f53dd8b560c08f6dd78a62a7">&#9670;&#160;</a></span>chmode()</h2>
@@ -156,24 +156,24 @@ Private Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00021">21</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                             {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
-<div class="line"><span class="lineno">   23</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   25</span>    }</div>
-<div class="line"><span class="lineno">   26</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a> = {.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">mode</a> = mode}};</div>
-<div class="line"><span class="lineno">   27</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
-<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::function::chmode</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   29</span>}</div>
-<div class="ttc" id="a_request_8h_html_a610ce22de673afc7b1e8b0e7b3c9fe7a"><div class="ttname"><a href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a></div><div class="ttdeci">#define FILENAME_LENGTH</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00010">Request.h:10</a></div></div>
-<div class="ttc" id="aclass_libfs_html_a954ec7bd5c0d6ec96df1f90ffad54e33"><div class="ttname"><a href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">Libfs::performRequest</a></div><div class="ttdeci">int performRequest(lfs::function func, lfs::arguments *args, const char *inBuf=nullptr, unsigned int inSize=0, char *outBuf=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8cpp_source.html#l00092">Libfs.cpp:92</a></div></div>
-<div class="ttc" id="aclass_libfs_html_aadbead24b25eabce098b4436ad45e9ef"><div class="ttname"><a href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">Libfs::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8h_source.html#l00036">Libfs.h:36</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::chmode</a></div><div class="ttdeci">@ chmode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1create__chmode__args_html_ab92a8044d35f8f1c32d60d8124286d7e"><div class="ttname"><a href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">lfs::create_chmode_args::mode</a></div><div class="ttdeci">long mode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00018">Request.h:18</a></div></div>
-<div class="ttc" id="astructlfs_1_1create__chmode__args_html_af1969a69c5535e8b8b32863882e3aff6"><div class="ttname"><a href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">lfs::create_chmode_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00017">Request.h:17</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html"><div class="ttname"><a href="unionlfs_1_1arguments.html">lfs::arguments</a></div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00053">Request.h:53</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a3f062b6760c8826e4d980f4f58c25a6c"><div class="ttname"><a href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">lfs::arguments::create_chmode_args</a></div><div class="ttdeci">struct create_chmode_args create_chmode_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00054">Request.h:54</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00017">17</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                             {</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
+<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
+<div class="line"><span class="lineno">   20</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   21</span>    }</div>
+<div class="line"><span class="lineno">   22</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a> = {.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">mode</a> = mode}};</div>
+<div class="line"><span class="lineno">   23</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
+<div class="line"><span class="lineno">   24</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::function::chmode</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   25</span>}</div>
+<div class="ttc" id="a_request_8h_html_a610ce22de673afc7b1e8b0e7b3c9fe7a"><div class="ttname"><a href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a></div><div class="ttdeci">#define FILENAME_LENGTH</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00006">Request.h:6</a></div></div>
+<div class="ttc" id="aclass_libfs_html_a954ec7bd5c0d6ec96df1f90ffad54e33"><div class="ttname"><a href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">Libfs::performRequest</a></div><div class="ttdeci">int performRequest(lfs::function func, lfs::arguments *args, const char *inBuf=nullptr, unsigned int inSize=0, char *outBuf=nullptr)</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8cpp_source.html#l00088">Libfs.cpp:88</a></div></div>
+<div class="ttc" id="aclass_libfs_html_aadbead24b25eabce098b4436ad45e9ef"><div class="ttname"><a href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">Libfs::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8h_source.html#l00032">Libfs.h:32</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::chmode</a></div><div class="ttdeci">@ chmode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1create__chmode__args_html_ab92a8044d35f8f1c32d60d8124286d7e"><div class="ttname"><a href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">lfs::create_chmode_args::mode</a></div><div class="ttdeci">long mode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00014">Request.h:14</a></div></div>
+<div class="ttc" id="astructlfs_1_1create__chmode__args_html_af1969a69c5535e8b8b32863882e3aff6"><div class="ttname"><a href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">lfs::create_chmode_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00013">Request.h:13</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html"><div class="ttname"><a href="unionlfs_1_1arguments.html">lfs::arguments</a></div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00049">Request.h:49</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a3f062b6760c8826e4d980f4f58c25a6c"><div class="ttname"><a href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">lfs::arguments::create_chmode_args</a></div><div class="ttdeci">struct create_chmode_args create_chmode_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -233,14 +233,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00077">77</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                       {</div>
-<div class="line"><span class="lineno">   78</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
-<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::function::close</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   80</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::close</a></div><div class="ttdeci">@ close</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1close__notify__unnotify__args_html_ae8d74873f2a28adb28a30b40a37c2fca"><div class="ttname"><a href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">lfs::close_notify_unnotify_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_aa85a4700f0107177002674a051b07320"><div class="ttname"><a href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">lfs::arguments::close_notify_unnotify_args</a></div><div class="ttdeci">struct close_notify_unnotify_args close_notify_unnotify_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00060">Request.h:60</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00073">73</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   73</span>                       {</div>
+<div class="line"><span class="lineno">   74</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::function::close</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   76</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::close</a></div><div class="ttdeci">@ close</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1close__notify__unnotify__args_html_ae8d74873f2a28adb28a30b40a37c2fca"><div class="ttname"><a href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">lfs::close_notify_unnotify_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00042">Request.h:42</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_aa85a4700f0107177002674a051b07320"><div class="ttname"><a href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">lfs::arguments::close_notify_unnotify_args</a></div><div class="ttdeci">struct close_notify_unnotify_args close_notify_unnotify_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00056">Request.h:56</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -338,17 +338,17 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00011">11</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   11</span>                                                 {</div>
-<div class="line"><span class="lineno">   12</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
-<div class="line"><span class="lineno">   13</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
-<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   15</span>    }</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a> = {.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">mode</a> = mode}};</div>
-<div class="line"><span class="lineno">   17</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
-<div class="line"><span class="lineno">   18</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::function::create</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00007">7</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                 {</div>
+<div class="line"><span class="lineno">    8</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
+<div class="line"><span class="lineno">    9</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   11</span>    }</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a> = {.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#ab92a8044d35f8f1c32d60d8124286d7e">mode</a> = mode}};</div>
+<div class="line"><span class="lineno">   13</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>.<a class="code hl_variable" href="structlfs_1_1create__chmode__args.html#af1969a69c5535e8b8b32863882e3aff6">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::function::create</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -446,12 +446,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00082">82</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   82</span>                        {</div>
-<div class="line"><span class="lineno">   83</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
-<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::function::notify</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   85</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::notify</a></div><div class="ttdeci">@ notify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00078">78</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   78</span>                        {</div>
+<div class="line"><span class="lineno">   79</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
+<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::function::notify</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   81</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::notify</a></div><div class="ttdeci">@ notify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -535,20 +535,20 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00052">52</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   52</span>                                           {</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
-<div class="line"><span class="lineno">   54</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
-<div class="line"><span class="lineno">   55</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   56</span>    }</div>
-<div class="line"><span class="lineno">   57</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a> = {.<a class="code hl_variable" href="structlfs_1_1open__args.html#af02143926b12b1b15f351dd50d649ee5">flags</a> = flags}};</div>
-<div class="line"><span class="lineno">   58</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a>.<a class="code hl_variable" href="structlfs_1_1open__args.html#a3b3e6200d9ef06ce07d10e9533249186">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::function::open</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   60</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::open</a></div><div class="ttdeci">@ open</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1open__args_html_a3b3e6200d9ef06ce07d10e9533249186"><div class="ttname"><a href="structlfs_1_1open__args.html#a3b3e6200d9ef06ce07d10e9533249186">lfs::open_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00031">Request.h:31</a></div></div>
-<div class="ttc" id="astructlfs_1_1open__args_html_af02143926b12b1b15f351dd50d649ee5"><div class="ttname"><a href="structlfs_1_1open__args.html#af02143926b12b1b15f351dd50d649ee5">lfs::open_args::flags</a></div><div class="ttdeci">int flags</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00032">Request.h:32</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a012c119f30e0bc41e8cd034a9c798485"><div class="ttname"><a href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">lfs::arguments::open_args</a></div><div class="ttdeci">struct open_args open_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00057">Request.h:57</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00048">48</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                           {</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
+<div class="line"><span class="lineno">   51</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   52</span>    }</div>
+<div class="line"><span class="lineno">   53</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a> = {.<a class="code hl_variable" href="structlfs_1_1open__args.html#af02143926b12b1b15f351dd50d649ee5">flags</a> = flags}};</div>
+<div class="line"><span class="lineno">   54</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a>.<a class="code hl_variable" href="structlfs_1_1open__args.html#a3b3e6200d9ef06ce07d10e9533249186">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::function::open</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   56</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::open</a></div><div class="ttdeci">@ open</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1open__args_html_a3b3e6200d9ef06ce07d10e9533249186"><div class="ttname"><a href="structlfs_1_1open__args.html#a3b3e6200d9ef06ce07d10e9533249186">lfs::open_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00027">Request.h:27</a></div></div>
+<div class="ttc" id="astructlfs_1_1open__args_html_af02143926b12b1b15f351dd50d649ee5"><div class="ttname"><a href="structlfs_1_1open__args.html#af02143926b12b1b15f351dd50d649ee5">lfs::open_args::flags</a></div><div class="ttdeci">int flags</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00028">Request.h:28</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a012c119f30e0bc41e8cd034a9c798485"><div class="ttname"><a href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">lfs::arguments::open_args</a></div><div class="ttdeci">struct open_args open_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00053">Request.h:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -669,54 +669,54 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00092">92</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   93</span>                                                                                {</div>
-<div class="line"><span class="lineno">   94</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   95</span>        <a class="code hl_class" href="class_shared_memory.html">SharedMemory</a> shm(0);</div>
-<div class="line"><span class="lineno">   96</span>        <a class="code hl_class" href="class_semaphores.html">Semaphores</a> sems(0);</div>
-<div class="line"><span class="lineno">   97</span> </div>
-<div class="line"><span class="lineno">   98</span>        <span class="comment">// start command</span></div>
-<div class="line"><span class="lineno">   99</span>        sems.lockWithUndo(<a class="code hl_define" href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a>);</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>        <span class="comment">// write request</span></div>
-<div class="line"><span class="lineno">  102</span>        <span class="keyword">auto</span> req = shm.getRequest();</div>
-<div class="line"><span class="lineno">  103</span>        req-&gt;owner = getpid();</div>
-<div class="line"><span class="lineno">  104</span>        req-&gt;func = func;</div>
-<div class="line"><span class="lineno">  105</span>        req-&gt;args = *args;</div>
-<div class="line"><span class="lineno">  106</span>        <span class="keywordflow">if</span> (inBuf != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  107</span>            memcpy(shm.getBuf(), inBuf, inSize);</div>
-<div class="line"><span class="lineno">  108</span>        }</div>
-<div class="line"><span class="lineno">  109</span>        sems.unlock(<a class="code hl_define" href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a>);</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>        <span class="comment">// read response</span></div>
-<div class="line"><span class="lineno">  112</span>        sems.lock(<a class="code hl_define" href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a>);</div>
-<div class="line"><span class="lineno">  113</span>        <a class="code hl_struct" href="structlfs_1_1result.html">lfs::result</a> *res = shm.getResult();</div>
-<div class="line"><span class="lineno">  114</span>        <span class="keywordtype">int</span> ret = res-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>;</div>
-<div class="line"><span class="lineno">  115</span>        <span class="keywordflow">if</span> (ret &lt; 0) {</div>
-<div class="line"><span class="lineno">  116</span>            <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = res-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a>;</div>
-<div class="line"><span class="lineno">  117</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (outBuf != <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  118</span>            memcpy(outBuf, shm.getBuf(), ret);</div>
-<div class="line"><span class="lineno">  119</span>        }</div>
-<div class="line"><span class="lineno">  120</span> </div>
-<div class="line"><span class="lineno">  121</span>        <span class="comment">// end command</span></div>
-<div class="line"><span class="lineno">  122</span>        sems.unlock(<a class="code hl_define" href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a>);</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>        <span class="keywordflow">return</span> ret;</div>
-<div class="line"><span class="lineno">  125</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a> &amp;e) {</div>
-<div class="line"><span class="lineno">  126</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = <a class="code hl_define" href="_libfs_8h.html#a9efff3dd02cabd251b6745f1b2920a7e">EDAEMON</a>;</div>
-<div class="line"><span class="lineno">  127</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">  128</span>    }</div>
-<div class="line"><span class="lineno">  129</span>}</div>
-<div class="ttc" id="a_ipc_8h_html_a38eb1f0a1b19769486e20f8d535080f0"><div class="ttname"><a href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a></div><div class="ttdeci">#define SEM_RES</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00016">Ipc.h:16</a></div></div>
-<div class="ttc" id="a_ipc_8h_html_a3e87ce7674b48711d1967ea8475c2579"><div class="ttname"><a href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a></div><div class="ttdeci">#define SEM_CMD</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00014">Ipc.h:14</a></div></div>
-<div class="ttc" id="a_ipc_8h_html_ace331a104174061665b0c070d6db7de4"><div class="ttname"><a href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a></div><div class="ttdeci">#define SEM_REQ</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00015">Ipc.h:15</a></div></div>
-<div class="ttc" id="a_libfs_8h_html_a9efff3dd02cabd251b6745f1b2920a7e"><div class="ttname"><a href="_libfs_8h.html#a9efff3dd02cabd251b6745f1b2920a7e">EDAEMON</a></div><div class="ttdeci">#define EDAEMON</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8h_source.html#l00010">Libfs.h:10</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00088">88</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                                                {</div>
+<div class="line"><span class="lineno">   90</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   91</span>        <a class="code hl_class" href="class_shared_memory.html">SharedMemory</a> shm(0);</div>
+<div class="line"><span class="lineno">   92</span>        <a class="code hl_class" href="class_semaphores.html">Semaphores</a> sems(0);</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>        <span class="comment">// start command</span></div>
+<div class="line"><span class="lineno">   95</span>        sems.lockWithUndo(<a class="code hl_define" href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a>);</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>        <span class="comment">// write request</span></div>
+<div class="line"><span class="lineno">   98</span>        <span class="keyword">auto</span> req = shm.getRequest();</div>
+<div class="line"><span class="lineno">   99</span>        req-&gt;owner = getpid();</div>
+<div class="line"><span class="lineno">  100</span>        req-&gt;func = func;</div>
+<div class="line"><span class="lineno">  101</span>        req-&gt;args = *args;</div>
+<div class="line"><span class="lineno">  102</span>        <span class="keywordflow">if</span> (inBuf != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  103</span>            memcpy(shm.getBuf(), inBuf, inSize);</div>
+<div class="line"><span class="lineno">  104</span>        }</div>
+<div class="line"><span class="lineno">  105</span>        sems.unlock(<a class="code hl_define" href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a>);</div>
+<div class="line"><span class="lineno">  106</span> </div>
+<div class="line"><span class="lineno">  107</span>        <span class="comment">// read response</span></div>
+<div class="line"><span class="lineno">  108</span>        sems.lock(<a class="code hl_define" href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a>);</div>
+<div class="line"><span class="lineno">  109</span>        <a class="code hl_struct" href="structlfs_1_1result.html">lfs::result</a> *res = shm.getResult();</div>
+<div class="line"><span class="lineno">  110</span>        <span class="keywordtype">int</span> ret = res-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>;</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keywordflow">if</span> (ret &lt; 0) {</div>
+<div class="line"><span class="lineno">  112</span>            <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = res-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a>;</div>
+<div class="line"><span class="lineno">  113</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (outBuf != <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  114</span>            memcpy(outBuf, shm.getBuf(), ret);</div>
+<div class="line"><span class="lineno">  115</span>        }</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>        <span class="comment">// end command</span></div>
+<div class="line"><span class="lineno">  118</span>        sems.unlock(<a class="code hl_define" href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a>);</div>
+<div class="line"><span class="lineno">  119</span> </div>
+<div class="line"><span class="lineno">  120</span>        <span class="keywordflow">return</span> ret;</div>
+<div class="line"><span class="lineno">  121</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a> &amp;e) {</div>
+<div class="line"><span class="lineno">  122</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = <a class="code hl_define" href="_libfs_8h.html#a9efff3dd02cabd251b6745f1b2920a7e">EDAEMON</a>;</div>
+<div class="line"><span class="lineno">  123</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">  124</span>    }</div>
+<div class="line"><span class="lineno">  125</span>}</div>
+<div class="ttc" id="a_ipc_8h_html_a38eb1f0a1b19769486e20f8d535080f0"><div class="ttname"><a href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a></div><div class="ttdeci">#define SEM_RES</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00012">Ipc.h:12</a></div></div>
+<div class="ttc" id="a_ipc_8h_html_a3e87ce7674b48711d1967ea8475c2579"><div class="ttname"><a href="_ipc_8h.html#a3e87ce7674b48711d1967ea8475c2579">SEM_CMD</a></div><div class="ttdeci">#define SEM_CMD</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00010">Ipc.h:10</a></div></div>
+<div class="ttc" id="a_ipc_8h_html_ace331a104174061665b0c070d6db7de4"><div class="ttname"><a href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a></div><div class="ttdeci">#define SEM_REQ</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00011">Ipc.h:11</a></div></div>
+<div class="ttc" id="a_libfs_8h_html_a9efff3dd02cabd251b6745f1b2920a7e"><div class="ttname"><a href="_libfs_8h.html#a9efff3dd02cabd251b6745f1b2920a7e">EDAEMON</a></div><div class="ttdeci">#define EDAEMON</div><div class="ttdef"><b>Definition</b> <a href="_libfs_8h_source.html#l00006">Libfs.h:6</a></div></div>
 <div class="ttc" id="aclass_library_exception_html"><div class="ttname"><a href="class_library_exception.html">LibraryException</a></div><div class="ttdef"><b>Definition</b> <a href="_library_exception_8h_source.html#l00007">LibraryException.h:7</a></div></div>
-<div class="ttc" id="aclass_semaphores_html"><div class="ttname"><a href="class_semaphores.html">Semaphores</a></div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00033">Ipc.h:33</a></div></div>
-<div class="ttc" id="aclass_shared_memory_html"><div class="ttname"><a href="class_shared_memory.html">SharedMemory</a></div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00018">Ipc.h:18</a></div></div>
-<div class="ttc" id="astructlfs_1_1result_html"><div class="ttname"><a href="structlfs_1_1result.html">lfs::result</a></div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00009">Result.h:9</a></div></div>
-<div class="ttc" id="astructlfs_1_1result_html_a8b5d4836a4c2466ef6a312358ac3deff"><div class="ttname"><a href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs::result::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00011">Result.h:11</a></div></div>
-<div class="ttc" id="astructlfs_1_1result_html_ae07d7a9e5b603c2403a2c519bf4c42a0"><div class="ttname"><a href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">lfs::result::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00010">Result.h:10</a></div></div>
+<div class="ttc" id="aclass_semaphores_html"><div class="ttname"><a href="class_semaphores.html">Semaphores</a></div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00029">Ipc.h:29</a></div></div>
+<div class="ttc" id="aclass_shared_memory_html"><div class="ttname"><a href="class_shared_memory.html">SharedMemory</a></div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00014">Ipc.h:14</a></div></div>
+<div class="ttc" id="astructlfs_1_1result_html"><div class="ttname"><a href="structlfs_1_1result.html">lfs::result</a></div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00005">Result.h:5</a></div></div>
+<div class="ttc" id="astructlfs_1_1result_html_a8b5d4836a4c2466ef6a312358ac3deff"><div class="ttname"><a href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs::result::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00007">Result.h:7</a></div></div>
+<div class="ttc" id="astructlfs_1_1result_html_ae07d7a9e5b603c2403a2c519bf4c42a0"><div class="ttname"><a href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">lfs::result::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00006">Result.h:6</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -958,14 +958,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00062">62</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   62</span>                                                    {</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a> = {.<a class="code hl_variable" href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">fd</a> = fd, .size = size}};</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::function::read</a>, &amp;args, <span class="keyword">nullptr</span>, 0, buf);</div>
-<div class="line"><span class="lineno">   65</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::read</a></div><div class="ttdeci">@ read</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1read__write__args_html_a72917e2a4fb9bc8ddd9aaa3a61b7e671"><div class="ttname"><a href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">lfs::read_write_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00036">Request.h:36</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a9ef3d5a81c8fdb1b87474f952d55b192"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">lfs::arguments::read_write_args</a></div><div class="ttdeci">struct read_write_args read_write_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00058">Request.h:58</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00058">58</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   58</span>                                                    {</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a> = {.<a class="code hl_variable" href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">fd</a> = fd, .size = size}};</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::function::read</a>, &amp;args, <span class="keyword">nullptr</span>, 0, buf);</div>
+<div class="line"><span class="lineno">   61</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::read</a></div><div class="ttdeci">@ read</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1read__write__args_html_a72917e2a4fb9bc8ddd9aaa3a61b7e671"><div class="ttname"><a href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">lfs::read_write_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00032">Request.h:32</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a9ef3d5a81c8fdb1b87474f952d55b192"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">lfs::arguments::read_write_args</a></div><div class="ttdeci">struct read_write_args read_write_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00054">Request.h:54</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1043,21 +1043,21 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00031">31</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                          {</div>
-<div class="line"><span class="lineno">   32</span>    <span class="keywordflow">if</span> (strlen(oldName) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a> || strlen(newName) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
-<div class="line"><span class="lineno">   33</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
-<div class="line"><span class="lineno">   34</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   35</span>    }</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {};</div>
-<div class="line"><span class="lineno">   37</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>.<a class="code hl_variable" href="structlfs_1_1rename__args.html#ae268bc9bdca2413affc237c02ad63718">oldname</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, oldName);</div>
-<div class="line"><span class="lineno">   38</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>.<a class="code hl_variable" href="structlfs_1_1rename__args.html#aa8f583ec6f379521b6e5d07dbf33ffb6">newname</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, newName);</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::function::rename</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   40</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::rename</a></div><div class="ttdeci">@ rename</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1rename__args_html_aa8f583ec6f379521b6e5d07dbf33ffb6"><div class="ttname"><a href="structlfs_1_1rename__args.html#aa8f583ec6f379521b6e5d07dbf33ffb6">lfs::rename_args::newname</a></div><div class="ttdeci">char newname[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00023">Request.h:23</a></div></div>
-<div class="ttc" id="astructlfs_1_1rename__args_html_ae268bc9bdca2413affc237c02ad63718"><div class="ttname"><a href="structlfs_1_1rename__args.html#ae268bc9bdca2413affc237c02ad63718">lfs::rename_args::oldname</a></div><div class="ttdeci">char oldname[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00022">Request.h:22</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a9f15d0479ae7f69d138921a7035d38bb"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">lfs::arguments::rename_args</a></div><div class="ttdeci">struct rename_args rename_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00055">Request.h:55</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00027">27</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   27</span>                                                          {</div>
+<div class="line"><span class="lineno">   28</span>    <span class="keywordflow">if</span> (strlen(oldName) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a> || strlen(newName) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
+<div class="line"><span class="lineno">   29</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
+<div class="line"><span class="lineno">   30</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   31</span>    }</div>
+<div class="line"><span class="lineno">   32</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {};</div>
+<div class="line"><span class="lineno">   33</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>.<a class="code hl_variable" href="structlfs_1_1rename__args.html#ae268bc9bdca2413affc237c02ad63718">oldname</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, oldName);</div>
+<div class="line"><span class="lineno">   34</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>.<a class="code hl_variable" href="structlfs_1_1rename__args.html#aa8f583ec6f379521b6e5d07dbf33ffb6">newname</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, newName);</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::function::rename</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   36</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::rename</a></div><div class="ttdeci">@ rename</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1rename__args_html_aa8f583ec6f379521b6e5d07dbf33ffb6"><div class="ttname"><a href="structlfs_1_1rename__args.html#aa8f583ec6f379521b6e5d07dbf33ffb6">lfs::rename_args::newname</a></div><div class="ttdeci">char newname[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00019">Request.h:19</a></div></div>
+<div class="ttc" id="astructlfs_1_1rename__args_html_ae268bc9bdca2413affc237c02ad63718"><div class="ttname"><a href="structlfs_1_1rename__args.html#ae268bc9bdca2413affc237c02ad63718">lfs::rename_args::oldname</a></div><div class="ttdeci">char oldname[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00018">Request.h:18</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a9f15d0479ae7f69d138921a7035d38bb"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">lfs::arguments::rename_args</a></div><div class="ttdeci">struct rename_args rename_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00051">Request.h:51</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1129,14 +1129,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00072">72</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   72</span>                                  {</div>
-<div class="line"><span class="lineno">   73</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">seek_args</a> = {.<a class="code hl_variable" href="structlfs_1_1seek__args.html#ac8352e7689ce7b9fedc3795fdb8fd35a">fd</a> = fd, .offset = offset}};</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::function::seek</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   75</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::seek</a></div><div class="ttdeci">@ seek</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1seek__args_html_ac8352e7689ce7b9fedc3795fdb8fd35a"><div class="ttname"><a href="structlfs_1_1seek__args.html#ac8352e7689ce7b9fedc3795fdb8fd35a">lfs::seek_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00041">Request.h:41</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a0f07ec26cb1a27d1dad1c88239f2ce7f"><div class="ttname"><a href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">lfs::arguments::seek_args</a></div><div class="ttdeci">struct seek_args seek_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00059">Request.h:59</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00068">68</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   68</span>                                  {</div>
+<div class="line"><span class="lineno">   69</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">seek_args</a> = {.<a class="code hl_variable" href="structlfs_1_1seek__args.html#ac8352e7689ce7b9fedc3795fdb8fd35a">fd</a> = fd, .offset = offset}};</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::function::seek</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   71</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::seek</a></div><div class="ttdeci">@ seek</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1seek__args_html_ac8352e7689ce7b9fedc3795fdb8fd35a"><div class="ttname"><a href="structlfs_1_1seek__args.html#ac8352e7689ce7b9fedc3795fdb8fd35a">lfs::seek_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00037">Request.h:37</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a0f07ec26cb1a27d1dad1c88239f2ce7f"><div class="ttname"><a href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">lfs::arguments::seek_args</a></div><div class="ttdeci">struct seek_args seek_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00055">Request.h:55</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1196,19 +1196,19 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00042">42</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                                  {</div>
-<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
-<div class="line"><span class="lineno">   45</span>        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><span class="lineno">   46</span>    }</div>
-<div class="line"><span class="lineno">   47</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {};</div>
-<div class="line"><span class="lineno">   48</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">unlink_args</a>.<a class="code hl_variable" href="structlfs_1_1unlink__args.html#a989fdf8552965d9cc2a93623921845b7">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::function::unlink</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   50</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::unlink</a></div><div class="ttdeci">@ unlink</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1unlink__args_html_a989fdf8552965d9cc2a93623921845b7"><div class="ttname"><a href="structlfs_1_1unlink__args.html#a989fdf8552965d9cc2a93623921845b7">lfs::unlink_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00027">Request.h:27</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_ace7014eb1943513e5bf26eb86383914e"><div class="ttname"><a href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">lfs::arguments::unlink_args</a></div><div class="ttdeci">struct unlink_args unlink_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00056">Request.h:56</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00038">38</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   38</span>                                  {</div>
+<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">if</span> (strlen(name) &gt; <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>) {</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="class_libfs.html#aadbead24b25eabce098b4436ad45e9ef">lfs_errno</a> = ENAMETOOLONG;</div>
+<div class="line"><span class="lineno">   41</span>        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><span class="lineno">   42</span>    }</div>
+<div class="line"><span class="lineno">   43</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {};</div>
+<div class="line"><span class="lineno">   44</span>    snprintf(args.<a class="code hl_variable" href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">unlink_args</a>.<a class="code hl_variable" href="structlfs_1_1unlink__args.html#a989fdf8552965d9cc2a93623921845b7">name</a>, <a class="code hl_define" href="_request_8h.html#a610ce22de673afc7b1e8b0e7b3c9fe7a">FILENAME_LENGTH</a>, <span class="stringliteral">&quot;%s&quot;</span>, name);</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::function::unlink</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   46</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::unlink</a></div><div class="ttdeci">@ unlink</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1unlink__args_html_a989fdf8552965d9cc2a93623921845b7"><div class="ttname"><a href="structlfs_1_1unlink__args.html#a989fdf8552965d9cc2a93623921845b7">lfs::unlink_args::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00023">Request.h:23</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_ace7014eb1943513e5bf26eb86383914e"><div class="ttname"><a href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">lfs::arguments::unlink_args</a></div><div class="ttdeci">struct unlink_args unlink_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00052">Request.h:52</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1306,12 +1306,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00087">87</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   87</span>                          {</div>
-<div class="line"><span class="lineno">   88</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::function::unnotify</a>, &amp;args);</div>
-<div class="line"><span class="lineno">   90</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::unnotify</a></div><div class="ttdeci">@ unnotify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00051">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00083">83</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   83</span>                          {</div>
+<div class="line"><span class="lineno">   84</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a> = {.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a> = fd}};</div>
+<div class="line"><span class="lineno">   85</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::function::unnotify</a>, &amp;args);</div>
+<div class="line"><span class="lineno">   86</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::unnotify</a></div><div class="ttdeci">@ unnotify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00047">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1389,12 +1389,12 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00067">67</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   67</span>                                                           {</div>
-<div class="line"><span class="lineno">   68</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a> = {.<a class="code hl_variable" href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">fd</a> = fd, .size = size}};</div>
-<div class="line"><span class="lineno">   69</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::function::write</a>, &amp;args, buf, size);</div>
-<div class="line"><span class="lineno">   70</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::write</a></div><div class="ttdeci">@ write</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_libfs_8cpp_source.html#l00063">63</a> of file <a class="el" href="_libfs_8cpp_source.html">Libfs.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   63</span>                                                           {</div>
+<div class="line"><span class="lineno">   64</span>    <a class="code hl_union" href="unionlfs_1_1arguments.html">lfs::arguments</a> args = {.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a> = {.<a class="code hl_variable" href="structlfs_1_1read__write__args.html#a72917e2a4fb9bc8ddd9aaa3a61b7e671">fd</a> = fd, .size = size}};</div>
+<div class="line"><span class="lineno">   65</span>    <span class="keywordflow">return</span> <a class="code hl_function" href="class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33">performRequest</a>(<a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::function::write</a>, &amp;args, buf, size);</div>
+<div class="line"><span class="lineno">   66</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::write</a></div><div class="ttdeci">@ write</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1465,7 +1465,7 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_libfs_8h_source.html#l00036">36</a> of file <a class="el" href="_libfs_8h_source.html">Libfs.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_libfs_8h_source.html#l00032">32</a> of file <a class="el" href="_libfs_8h_source.html">Libfs.h</a>.</p>
 
 </div>
 </div>

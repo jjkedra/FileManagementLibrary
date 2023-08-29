@@ -219,7 +219,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00018">18</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00014">14</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a219c10e2d61c35f446d096726842fc82" name="a219c10e2d61c35f446d096726842fc82"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a219c10e2d61c35f446d096726842fc82">&#9670;&#160;</a></span>Daemon()</h2>
@@ -236,23 +236,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00014">14</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>               : <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>{}, <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>{0666 | IPC_CREAT}, <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>(0666 | IPC_CREAT) {</div>
-<div class="line"><span class="lineno">   15</span>    <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#a8be14d5bfc34bcad3b3688aec7af2099">getResult</a>();</div>
-<div class="line"><span class="lineno">   16</span>    <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#a44ece5752ebfdc738043442d5b20a621">getRequest</a>();</div>
-<div class="line"><span class="lineno">   17</span>    <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#aaab217c71d99a5b621b9784bc84e1aed">getBuf</a>();</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="class_daemon.html#a79b24358a26c582280d60d3ee055d76b">clean_buf</a>();</div>
-<div class="line"><span class="lineno">   19</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a30f8f5d999ff2d9753d39e9a629b0355"><div class="ttname"><a href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">Daemon::fileHandles</a></div><div class="ttdeci">FileHandles fileHandles</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00064">Daemon.h:64</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a79b24358a26c582280d60d3ee055d76b"><div class="ttname"><a href="class_daemon.html#a79b24358a26c582280d60d3ee055d76b">Daemon::clean_buf</a></div><div class="ttdeci">void clean_buf()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00335">Daemon.cpp:335</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a8b1d53ca34bbecf67f670cbecd46d3e3"><div class="ttname"><a href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">Daemon::buf</a></div><div class="ttdeci">char * buf</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00070">Daemon.h:70</a></div></div>
-<div class="ttc" id="aclass_daemon_html_aa47f65d2e62888bd354148063df1ee59"><div class="ttname"><a href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">Daemon::sharedMemory</a></div><div class="ttdeci">SharedMemory sharedMemory</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00065">Daemon.h:65</a></div></div>
-<div class="ttc" id="aclass_daemon_html_acf74f8eacfaa7ac9cfe33bc9d24d5534"><div class="ttname"><a href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">Daemon::req</a></div><div class="ttdeci">lfs::request * req</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00068">Daemon.h:68</a></div></div>
-<div class="ttc" id="aclass_daemon_html_adb9d31a7be56a797a9ce591f56dec086"><div class="ttname"><a href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">Daemon::semaphores</a></div><div class="ttdeci">Semaphores semaphores</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00066">Daemon.h:66</a></div></div>
-<div class="ttc" id="aclass_daemon_html_afb7846ec0e68239b473304995308c616"><div class="ttname"><a href="class_daemon.html#afb7846ec0e68239b473304995308c616">Daemon::res</a></div><div class="ttdeci">lfs::result * res</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00069">Daemon.h:69</a></div></div>
-<div class="ttc" id="aclass_shared_memory_html_a44ece5752ebfdc738043442d5b20a621"><div class="ttname"><a href="class_shared_memory.html#a44ece5752ebfdc738043442d5b20a621">SharedMemory::getRequest</a></div><div class="ttdeci">lfs::request * getRequest() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00040">Ipc.cpp:40</a></div></div>
-<div class="ttc" id="aclass_shared_memory_html_a8be14d5bfc34bcad3b3688aec7af2099"><div class="ttname"><a href="class_shared_memory.html#a8be14d5bfc34bcad3b3688aec7af2099">SharedMemory::getResult</a></div><div class="ttdeci">lfs::result * getResult() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00044">Ipc.cpp:44</a></div></div>
-<div class="ttc" id="aclass_shared_memory_html_aaab217c71d99a5b621b9784bc84e1aed"><div class="ttname"><a href="class_shared_memory.html#aaab217c71d99a5b621b9784bc84e1aed">SharedMemory::getBuf</a></div><div class="ttdeci">char * getBuf() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00048">Ipc.cpp:48</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00010">10</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   10</span>               : <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>{}, <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>{0666 | IPC_CREAT}, <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>(0666 | IPC_CREAT) {</div>
+<div class="line"><span class="lineno">   11</span>    <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#a8be14d5bfc34bcad3b3688aec7af2099">getResult</a>();</div>
+<div class="line"><span class="lineno">   12</span>    <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#a44ece5752ebfdc738043442d5b20a621">getRequest</a>();</div>
+<div class="line"><span class="lineno">   13</span>    <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a> = <a class="code hl_variable" href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">sharedMemory</a>.<a class="code hl_function" href="class_shared_memory.html#aaab217c71d99a5b621b9784bc84e1aed">getBuf</a>();</div>
+<div class="line"><span class="lineno">   14</span>    <a class="code hl_function" href="class_daemon.html#a79b24358a26c582280d60d3ee055d76b">clean_buf</a>();</div>
+<div class="line"><span class="lineno">   15</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a30f8f5d999ff2d9753d39e9a629b0355"><div class="ttname"><a href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">Daemon::fileHandles</a></div><div class="ttdeci">FileHandles fileHandles</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00060">Daemon.h:60</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a79b24358a26c582280d60d3ee055d76b"><div class="ttname"><a href="class_daemon.html#a79b24358a26c582280d60d3ee055d76b">Daemon::clean_buf</a></div><div class="ttdeci">void clean_buf()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00331">Daemon.cpp:331</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a8b1d53ca34bbecf67f670cbecd46d3e3"><div class="ttname"><a href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">Daemon::buf</a></div><div class="ttdeci">char * buf</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00066">Daemon.h:66</a></div></div>
+<div class="ttc" id="aclass_daemon_html_aa47f65d2e62888bd354148063df1ee59"><div class="ttname"><a href="class_daemon.html#aa47f65d2e62888bd354148063df1ee59">Daemon::sharedMemory</a></div><div class="ttdeci">SharedMemory sharedMemory</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00061">Daemon.h:61</a></div></div>
+<div class="ttc" id="aclass_daemon_html_acf74f8eacfaa7ac9cfe33bc9d24d5534"><div class="ttname"><a href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">Daemon::req</a></div><div class="ttdeci">lfs::request * req</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00064">Daemon.h:64</a></div></div>
+<div class="ttc" id="aclass_daemon_html_adb9d31a7be56a797a9ce591f56dec086"><div class="ttname"><a href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">Daemon::semaphores</a></div><div class="ttdeci">Semaphores semaphores</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00062">Daemon.h:62</a></div></div>
+<div class="ttc" id="aclass_daemon_html_afb7846ec0e68239b473304995308c616"><div class="ttname"><a href="class_daemon.html#afb7846ec0e68239b473304995308c616">Daemon::res</a></div><div class="ttdeci">lfs::result * res</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00065">Daemon.h:65</a></div></div>
+<div class="ttc" id="aclass_shared_memory_html_a44ece5752ebfdc738043442d5b20a621"><div class="ttname"><a href="class_shared_memory.html#a44ece5752ebfdc738043442d5b20a621">SharedMemory::getRequest</a></div><div class="ttdeci">lfs::request * getRequest() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00036">Ipc.cpp:36</a></div></div>
+<div class="ttc" id="aclass_shared_memory_html_a8be14d5bfc34bcad3b3688aec7af2099"><div class="ttname"><a href="class_shared_memory.html#a8be14d5bfc34bcad3b3688aec7af2099">SharedMemory::getResult</a></div><div class="ttdeci">lfs::result * getResult() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00040">Ipc.cpp:40</a></div></div>
+<div class="ttc" id="aclass_shared_memory_html_aaab217c71d99a5b621b9784bc84e1aed"><div class="ttname"><a href="class_shared_memory.html#aaab217c71d99a5b621b9784bc84e1aed">SharedMemory::getBuf</a></div><div class="ttdeci">char * getBuf() const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00044">Ipc.cpp:44</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -288,17 +288,17 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00291">291</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  291</span>                                       {</div>
-<div class="line"><span class="lineno">  292</span>    <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>.<a class="code hl_function" href="class_semaphores.html#a486efafd286f4eaac70fb937d28f8a57">lock</a>(<a class="code hl_define" href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a>);</div>
-<div class="line"><span class="lineno">  293</span>    <a class="code hl_function" href="class_daemon.html#a42229b8cd2751ac1f123f539450f4e81">process_request</a>();</div>
-<div class="line"><span class="lineno">  294</span>    <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>.<a class="code hl_function" href="class_semaphores.html#aabdf1b154084bd8433f338f2195ea1d2">unlock</a>(<a class="code hl_define" href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a>);</div>
-<div class="line"><span class="lineno">  295</span>}</div>
-<div class="ttc" id="a_ipc_8h_html_a38eb1f0a1b19769486e20f8d535080f0"><div class="ttname"><a href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a></div><div class="ttdeci">#define SEM_RES</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00016">Ipc.h:16</a></div></div>
-<div class="ttc" id="a_ipc_8h_html_ace331a104174061665b0c070d6db7de4"><div class="ttname"><a href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a></div><div class="ttdeci">#define SEM_REQ</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00015">Ipc.h:15</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a42229b8cd2751ac1f123f539450f4e81"><div class="ttname"><a href="class_daemon.html#a42229b8cd2751ac1f123f539450f4e81">Daemon::process_request</a></div><div class="ttdeci">void process_request()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00297">Daemon.cpp:297</a></div></div>
-<div class="ttc" id="aclass_semaphores_html_a486efafd286f4eaac70fb937d28f8a57"><div class="ttname"><a href="class_semaphores.html#a486efafd286f4eaac70fb937d28f8a57">Semaphores::lock</a></div><div class="ttdeci">void lock(unsigned short sem_num) const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00080">Ipc.cpp:80</a></div></div>
-<div class="ttc" id="aclass_semaphores_html_aabdf1b154084bd8433f338f2195ea1d2"><div class="ttname"><a href="class_semaphores.html#aabdf1b154084bd8433f338f2195ea1d2">Semaphores::unlock</a></div><div class="ttdeci">void unlock(unsigned short sem_num) const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00088">Ipc.cpp:88</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00287">287</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  287</span>                                       {</div>
+<div class="line"><span class="lineno">  288</span>    <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>.<a class="code hl_function" href="class_semaphores.html#a486efafd286f4eaac70fb937d28f8a57">lock</a>(<a class="code hl_define" href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a>);</div>
+<div class="line"><span class="lineno">  289</span>    <a class="code hl_function" href="class_daemon.html#a42229b8cd2751ac1f123f539450f4e81">process_request</a>();</div>
+<div class="line"><span class="lineno">  290</span>    <a class="code hl_variable" href="class_daemon.html#adb9d31a7be56a797a9ce591f56dec086">semaphores</a>.<a class="code hl_function" href="class_semaphores.html#aabdf1b154084bd8433f338f2195ea1d2">unlock</a>(<a class="code hl_define" href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a>);</div>
+<div class="line"><span class="lineno">  291</span>}</div>
+<div class="ttc" id="a_ipc_8h_html_a38eb1f0a1b19769486e20f8d535080f0"><div class="ttname"><a href="_ipc_8h.html#a38eb1f0a1b19769486e20f8d535080f0">SEM_RES</a></div><div class="ttdeci">#define SEM_RES</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00012">Ipc.h:12</a></div></div>
+<div class="ttc" id="a_ipc_8h_html_ace331a104174061665b0c070d6db7de4"><div class="ttname"><a href="_ipc_8h.html#ace331a104174061665b0c070d6db7de4">SEM_REQ</a></div><div class="ttdeci">#define SEM_REQ</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00011">Ipc.h:11</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a42229b8cd2751ac1f123f539450f4e81"><div class="ttname"><a href="class_daemon.html#a42229b8cd2751ac1f123f539450f4e81">Daemon::process_request</a></div><div class="ttdeci">void process_request()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00293">Daemon.cpp:293</a></div></div>
+<div class="ttc" id="aclass_semaphores_html_a486efafd286f4eaac70fb937d28f8a57"><div class="ttname"><a href="class_semaphores.html#a486efafd286f4eaac70fb937d28f8a57">Semaphores::lock</a></div><div class="ttdeci">void lock(unsigned short sem_num) const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00076">Ipc.cpp:76</a></div></div>
+<div class="ttc" id="aclass_semaphores_html_aabdf1b154084bd8433f338f2195ea1d2"><div class="ttname"><a href="class_semaphores.html#aabdf1b154084bd8433f338f2195ea1d2">Semaphores::unlock</a></div><div class="ttdeci">void unlock(unsigned short sem_num) const</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00084">Ipc.cpp:84</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -412,13 +412,13 @@ Here is the call graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00335">335</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  335</span>                       {</div>
-<div class="line"><span class="lineno">  336</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code hl_define" href="_payload_8h.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>; ++i){</div>
-<div class="line"><span class="lineno">  337</span>        <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>[i] = <span class="charliteral">&#39;\0&#39;</span>;</div>
-<div class="line"><span class="lineno">  338</span>    }</div>
-<div class="line"><span class="lineno">  339</span>}</div>
-<div class="ttc" id="a_payload_8h_html_a6821bafc3c88dfb2e433a095df9940c6"><div class="ttname"><a href="_payload_8h.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a></div><div class="ttdeci">#define BUF_SIZE</div><div class="ttdef"><b>Definition</b> <a href="_payload_8h_source.html#l00011">Payload.h:11</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00331">331</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  331</span>                       {</div>
+<div class="line"><span class="lineno">  332</span>    <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i=0; i&lt;<a class="code hl_define" href="_payload_8h.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a>; ++i){</div>
+<div class="line"><span class="lineno">  333</span>        <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>[i] = <span class="charliteral">&#39;\0&#39;</span>;</div>
+<div class="line"><span class="lineno">  334</span>    }</div>
+<div class="line"><span class="lineno">  335</span>}</div>
+<div class="ttc" id="a_payload_8h_html_a6821bafc3c88dfb2e433a095df9940c6"><div class="ttname"><a href="_payload_8h.html#a6821bafc3c88dfb2e433a095df9940c6">BUF_SIZE</a></div><div class="ttdeci">#define BUF_SIZE</div><div class="ttdef"><b>Definition</b> <a href="_payload_8h_source.html#l00007">Payload.h:7</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -455,23 +455,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00059">59</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   59</span>                            {</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>;</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a402ab19c99216df3245eb860569df62b">libfs_chmode</a>(args.name, args.mode);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00055">55</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   55</span>                            {</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>;</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">   58</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a402ab19c99216df3245eb860569df62b">libfs_chmode</a>(args.name, args.mode);</div>
+<div class="line"><span class="lineno">   59</span>    }</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">   61</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">   62</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">   63</span>    }</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">   65</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">   66</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">   67</span>    }</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 <div class="ttc" id="aclass_daemon_exception_html"><div class="ttname"><a href="class_daemon_exception.html">DaemonException</a></div><div class="ttdef"><b>Definition</b> <a href="_daemon_exception_8h_source.html#l00008">DaemonException.h:8</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a402ab19c99216df3245eb860569df62b"><div class="ttname"><a href="class_daemon.html#a402ab19c99216df3245eb860569df62b">Daemon::libfs_chmode</a></div><div class="ttdeci">int libfs_chmode(const char *name, long mode)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00051">Daemon.cpp:51</a></div></div>
-<div class="ttc" id="astructlfs_1_1request_html_af4fe00a00e6bb7f74a46119365ed0f9f"><div class="ttname"><a href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">lfs::request::args</a></div><div class="ttdeci">arguments args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00066">Request.h:66</a></div></div>
-<div class="ttc" id="astructlfs_1_1result_html_a8b5d4836a4c2466ef6a312358ac3deff"><div class="ttname"><a href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs::result::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00011">Result.h:11</a></div></div>
-<div class="ttc" id="astructlfs_1_1result_html_ae07d7a9e5b603c2403a2c519bf4c42a0"><div class="ttname"><a href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">lfs::result::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00010">Result.h:10</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a3f062b6760c8826e4d980f4f58c25a6c"><div class="ttname"><a href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">lfs::arguments::create_chmode_args</a></div><div class="ttdeci">struct create_chmode_args create_chmode_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00054">Request.h:54</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a402ab19c99216df3245eb860569df62b"><div class="ttname"><a href="class_daemon.html#a402ab19c99216df3245eb860569df62b">Daemon::libfs_chmode</a></div><div class="ttdeci">int libfs_chmode(const char *name, long mode)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00047">Daemon.cpp:47</a></div></div>
+<div class="ttc" id="astructlfs_1_1request_html_af4fe00a00e6bb7f74a46119365ed0f9f"><div class="ttname"><a href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">lfs::request::args</a></div><div class="ttdeci">arguments args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00062">Request.h:62</a></div></div>
+<div class="ttc" id="astructlfs_1_1result_html_a8b5d4836a4c2466ef6a312358ac3deff"><div class="ttname"><a href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs::result::lfs_errno</a></div><div class="ttdeci">int lfs_errno</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00007">Result.h:7</a></div></div>
+<div class="ttc" id="astructlfs_1_1result_html_ae07d7a9e5b603c2403a2c519bf4c42a0"><div class="ttname"><a href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">lfs::result::ret</a></div><div class="ttdeci">int ret</div><div class="ttdef"><b>Definition</b> <a href="_result_8h_source.html#l00006">Result.h:6</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a3f062b6760c8826e4d980f4f58c25a6c"><div class="ttname"><a href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">lfs::arguments::create_chmode_args</a></div><div class="ttdeci">struct create_chmode_args create_chmode_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -520,22 +520,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00214">214</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  214</span>                           {</div>
-<div class="line"><span class="lineno">  215</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>;</div>
-<div class="line"><span class="lineno">  216</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  217</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a251486969c581b48a506b95023dc0595">libfs_close</a>(args.fd);</div>
-<div class="line"><span class="lineno">  218</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a2552cfa68caec01d5f1f1b9b96b825a9">remove_handle</a>(args.fd);</div>
-<div class="line"><span class="lineno">  219</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Removing handle\n&quot;</span>;</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00210">210</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  210</span>                           {</div>
+<div class="line"><span class="lineno">  211</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>;</div>
+<div class="line"><span class="lineno">  212</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  213</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a251486969c581b48a506b95023dc0595">libfs_close</a>(args.fd);</div>
+<div class="line"><span class="lineno">  214</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a2552cfa68caec01d5f1f1b9b96b825a9">remove_handle</a>(args.fd);</div>
+<div class="line"><span class="lineno">  215</span>        std::cout &lt;&lt; <span class="stringliteral">&quot;Removing handle\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  216</span>    }</div>
+<div class="line"><span class="lineno">  217</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  218</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  219</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  220</span>    }</div>
-<div class="line"><span class="lineno">  221</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  222</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  223</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  224</span>    }</div>
-<div class="line"><span class="lineno">  225</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a251486969c581b48a506b95023dc0595"><div class="ttname"><a href="class_daemon.html#a251486969c581b48a506b95023dc0595">Daemon::libfs_close</a></div><div class="ttdeci">int libfs_close(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00205">Daemon.cpp:205</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_a2552cfa68caec01d5f1f1b9b96b825a9"><div class="ttname"><a href="class_file_handles.html#a2552cfa68caec01d5f1f1b9b96b825a9">FileHandles::remove_handle</a></div><div class="ttdeci">void remove_handle(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00035">FileHandles.cpp:35</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_aa85a4700f0107177002674a051b07320"><div class="ttname"><a href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">lfs::arguments::close_notify_unnotify_args</a></div><div class="ttdeci">struct close_notify_unnotify_args close_notify_unnotify_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00060">Request.h:60</a></div></div>
+<div class="line"><span class="lineno">  221</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a251486969c581b48a506b95023dc0595"><div class="ttname"><a href="class_daemon.html#a251486969c581b48a506b95023dc0595">Daemon::libfs_close</a></div><div class="ttdeci">int libfs_close(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00201">Daemon.cpp:201</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_a2552cfa68caec01d5f1f1b9b96b825a9"><div class="ttname"><a href="class_file_handles.html#a2552cfa68caec01d5f1f1b9b96b825a9">FileHandles::remove_handle</a></div><div class="ttdeci">void remove_handle(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00031">FileHandles.cpp:31</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_aa85a4700f0107177002674a051b07320"><div class="ttname"><a href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">lfs::arguments::close_notify_unnotify_args</a></div><div class="ttdeci">struct close_notify_unnotify_args close_notify_unnotify_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00056">Request.h:56</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -588,24 +588,24 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00036">36</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                            {</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keyword">auto</span> pid = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">owner</a>;</div>
-<div class="line"><span class="lineno">   38</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>;</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a0e29bdb0a516250f976b615d8c3d9815">libfs_create</a>(args.name, args.mode);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00032">32</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   32</span>                            {</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keyword">auto</span> pid = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">owner</a>;</div>
+<div class="line"><span class="lineno">   34</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a3f062b6760c8826e4d980f4f58c25a6c">create_chmode_args</a>;</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">   36</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a0e29bdb0a516250f976b615d8c3d9815">libfs_create</a>(args.name, args.mode);</div>
+<div class="line"><span class="lineno">   37</span>    }</div>
+<div class="line"><span class="lineno">   38</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">   39</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
+<div class="line"><span class="lineno">   40</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
 <div class="line"><span class="lineno">   41</span>    }</div>
-<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">   43</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">   45</span>    }</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> != -1){</div>
-<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">add_handle</a>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, pid, args.mode, args.name);</div>
-<div class="line"><span class="lineno">   48</span>    }</div>
-<div class="line"><span class="lineno">   49</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a0e29bdb0a516250f976b615d8c3d9815"><div class="ttname"><a href="class_daemon.html#a0e29bdb0a516250f976b615d8c3d9815">Daemon::libfs_create</a></div><div class="ttdeci">fd_type libfs_create(const char *name, long mode)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00021">Daemon.cpp:21</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_a6ca7ab1e53f138e8ce9913d79123ef30"><div class="ttname"><a href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">FileHandles::add_handle</a></div><div class="ttdeci">void add_handle(fd_type fd, pid_t owner, int flags, char *name)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00020">FileHandles.cpp:20</a></div></div>
-<div class="ttc" id="astructlfs_1_1request_html_a6b6c9dd1ad71836d0f76cf5681e21b29"><div class="ttname"><a href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">lfs::request::owner</a></div><div class="ttdeci">pid_t owner</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00064">Request.h:64</a></div></div>
+<div class="line"><span class="lineno">   42</span>    <span class="keywordflow">if</span>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> != -1){</div>
+<div class="line"><span class="lineno">   43</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">add_handle</a>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, pid, args.mode, args.name);</div>
+<div class="line"><span class="lineno">   44</span>    }</div>
+<div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a0e29bdb0a516250f976b615d8c3d9815"><div class="ttname"><a href="class_daemon.html#a0e29bdb0a516250f976b615d8c3d9815">Daemon::libfs_create</a></div><div class="ttdeci">fd_type libfs_create(const char *name, long mode)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00017">Daemon.cpp:17</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_a6ca7ab1e53f138e8ce9913d79123ef30"><div class="ttname"><a href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">FileHandles::add_handle</a></div><div class="ttdeci">void add_handle(fd_type fd, pid_t owner, int flags, char *name)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00016">FileHandles.cpp:16</a></div></div>
+<div class="ttc" id="astructlfs_1_1request_html_a6b6c9dd1ad71836d0f76cf5681e21b29"><div class="ttname"><a href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">lfs::request::owner</a></div><div class="ttdeci">pid_t owner</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00060">Request.h:60</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -656,19 +656,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00239">239</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  239</span>                            {</div>
-<div class="line"><span class="lineno">  240</span>    <span class="keyword">auto</span> fd = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a>;</div>
-<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  242</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a2bd872f4e77304bad272b65202a3449d">libfs_notify</a>(fd);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00235">235</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  235</span>                            {</div>
+<div class="line"><span class="lineno">  236</span>    <span class="keyword">auto</span> fd = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a>;</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  238</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a2bd872f4e77304bad272b65202a3449d">libfs_notify</a>(fd);</div>
+<div class="line"><span class="lineno">  239</span>    }</div>
+<div class="line"><span class="lineno">  240</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  241</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  242</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  243</span>    }</div>
-<div class="line"><span class="lineno">  244</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  245</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  246</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  247</span>    }</div>
-<div class="line"><span class="lineno">  248</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a2bd872f4e77304bad272b65202a3449d"><div class="ttname"><a href="class_daemon.html#a2bd872f4e77304bad272b65202a3449d">Daemon::libfs_notify</a></div><div class="ttdeci">int libfs_notify(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00227">Daemon.cpp:227</a></div></div>
-<div class="ttc" id="astructlfs_1_1close__notify__unnotify__args_html_ae8d74873f2a28adb28a30b40a37c2fca"><div class="ttname"><a href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">lfs::close_notify_unnotify_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="line"><span class="lineno">  244</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a2bd872f4e77304bad272b65202a3449d"><div class="ttname"><a href="class_daemon.html#a2bd872f4e77304bad272b65202a3449d">Daemon::libfs_notify</a></div><div class="ttdeci">int libfs_notify(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00223">Daemon.cpp:223</a></div></div>
+<div class="ttc" id="astructlfs_1_1close__notify__unnotify__args_html_ae8d74873f2a28adb28a30b40a37c2fca"><div class="ttname"><a href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">lfs::close_notify_unnotify_args::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00042">Request.h:42</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -722,22 +722,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00119">119</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  119</span>                          {</div>
-<div class="line"><span class="lineno">  120</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a>;</div>
-<div class="line"><span class="lineno">  121</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  122</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#aa92151add28def86227bc6c31efd269d">libfs_open</a>(args.name, args.flags);</div>
-<div class="line"><span class="lineno">  123</span>        lseek(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, 0, SEEK_SET);</div>
-<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">add_handle</a>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">owner</a>, args.flags, args.name);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00115">115</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  115</span>                          {</div>
+<div class="line"><span class="lineno">  116</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">open_args</a>;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  118</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#aa92151add28def86227bc6c31efd269d">libfs_open</a>(args.name, args.flags);</div>
+<div class="line"><span class="lineno">  119</span>        lseek(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, 0, SEEK_SET);</div>
+<div class="line"><span class="lineno">  120</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30">add_handle</a>(<a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>, <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a6b6c9dd1ad71836d0f76cf5681e21b29">owner</a>, args.flags, args.name);</div>
+<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  122</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  123</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  124</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  125</span>    }</div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  127</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  128</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  129</span>    }</div>
-<div class="line"><span class="lineno">  130</span> </div>
-<div class="line"><span class="lineno">  131</span>}</div>
-<div class="ttc" id="aclass_daemon_html_aa92151add28def86227bc6c31efd269d"><div class="ttname"><a href="class_daemon.html#aa92151add28def86227bc6c31efd269d">Daemon::libfs_open</a></div><div class="ttdeci">fd_type libfs_open(const char *name, int flags)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00110">Daemon.cpp:110</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a012c119f30e0bc41e8cd034a9c798485"><div class="ttname"><a href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">lfs::arguments::open_args</a></div><div class="ttdeci">struct open_args open_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00057">Request.h:57</a></div></div>
+<div class="line"><span class="lineno">  126</span> </div>
+<div class="line"><span class="lineno">  127</span>}</div>
+<div class="ttc" id="aclass_daemon_html_aa92151add28def86227bc6c31efd269d"><div class="ttname"><a href="class_daemon.html#aa92151add28def86227bc6c31efd269d">Daemon::libfs_open</a></div><div class="ttdeci">fd_type libfs_open(const char *name, int flags)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00106">Daemon.cpp:106</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a012c119f30e0bc41e8cd034a9c798485"><div class="ttname"><a href="unionlfs_1_1arguments.html#a012c119f30e0bc41e8cd034a9c798485">lfs::arguments::open_args</a></div><div class="ttdeci">struct open_args open_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00053">Request.h:53</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -788,21 +788,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00143">143</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  143</span>                          {</div>
-<div class="line"><span class="lineno">  144</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a>;</div>
-<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  146</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a3d5dc87b63bc9b815b72afff78379a1f">libfs_read</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, args.size);</div>
-<div class="line"><span class="lineno">  147</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">modify_offset</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00139">139</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  139</span>                          {</div>
+<div class="line"><span class="lineno">  140</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a>;</div>
+<div class="line"><span class="lineno">  141</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  142</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a3d5dc87b63bc9b815b72afff78379a1f">libfs_read</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, args.size);</div>
+<div class="line"><span class="lineno">  143</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">modify_offset</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a>);</div>
+<div class="line"><span class="lineno">  144</span>    }</div>
+<div class="line"><span class="lineno">  145</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  146</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  147</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  148</span>    }</div>
-<div class="line"><span class="lineno">  149</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  150</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  151</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  152</span>    }</div>
-<div class="line"><span class="lineno">  153</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a3d5dc87b63bc9b815b72afff78379a1f"><div class="ttname"><a href="class_daemon.html#a3d5dc87b63bc9b815b72afff78379a1f">Daemon::libfs_read</a></div><div class="ttdeci">int libfs_read(fd_type fd, void *buf, unsigned int size)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00133">Daemon.cpp:133</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_aab4ee20f7a650676c3b9bf649def79d4"><div class="ttname"><a href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">FileHandles::modify_offset</a></div><div class="ttdeci">void modify_offset(fd_type fd, long offset)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00053">FileHandles.cpp:53</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a9ef3d5a81c8fdb1b87474f952d55b192"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">lfs::arguments::read_write_args</a></div><div class="ttdeci">struct read_write_args read_write_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00058">Request.h:58</a></div></div>
+<div class="line"><span class="lineno">  149</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a3d5dc87b63bc9b815b72afff78379a1f"><div class="ttname"><a href="class_daemon.html#a3d5dc87b63bc9b815b72afff78379a1f">Daemon::libfs_read</a></div><div class="ttdeci">int libfs_read(fd_type fd, void *buf, unsigned int size)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00129">Daemon.cpp:129</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_aab4ee20f7a650676c3b9bf649def79d4"><div class="ttname"><a href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">FileHandles::modify_offset</a></div><div class="ttdeci">void modify_offset(fd_type fd, long offset)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00049">FileHandles.cpp:49</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a9ef3d5a81c8fdb1b87474f952d55b192"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">lfs::arguments::read_write_args</a></div><div class="ttdeci">struct read_write_args read_write_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00054">Request.h:54</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -855,19 +855,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00078">78</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   78</span>                            {</div>
-<div class="line"><span class="lineno">   79</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>;</div>
-<div class="line"><span class="lineno">   80</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a8a4e492e65533fc674f86aba7bf83739">libfs_rename</a>(args.oldname, args.newname);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00074">74</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                            {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">rename_args</a>;</div>
+<div class="line"><span class="lineno">   76</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a8a4e492e65533fc674f86aba7bf83739">libfs_rename</a>(args.oldname, args.newname);</div>
+<div class="line"><span class="lineno">   78</span>    }</div>
+<div class="line"><span class="lineno">   79</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">   81</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">   82</span>    }</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">   84</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">   85</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">   86</span>    }</div>
-<div class="line"><span class="lineno">   87</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a8a4e492e65533fc674f86aba7bf83739"><div class="ttname"><a href="class_daemon.html#a8a4e492e65533fc674f86aba7bf83739">Daemon::libfs_rename</a></div><div class="ttdeci">int libfs_rename(const char *oldName, const char *newName)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00070">Daemon.cpp:70</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a9f15d0479ae7f69d138921a7035d38bb"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">lfs::arguments::rename_args</a></div><div class="ttdeci">struct rename_args rename_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00055">Request.h:55</a></div></div>
+<div class="line"><span class="lineno">   83</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a8a4e492e65533fc674f86aba7bf83739"><div class="ttname"><a href="class_daemon.html#a8a4e492e65533fc674f86aba7bf83739">Daemon::libfs_rename</a></div><div class="ttdeci">int libfs_rename(const char *oldName, const char *newName)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00066">Daemon.cpp:66</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a9f15d0479ae7f69d138921a7035d38bb"><div class="ttname"><a href="unionlfs_1_1arguments.html#a9f15d0479ae7f69d138921a7035d38bb">lfs::arguments::rename_args</a></div><div class="ttdeci">struct rename_args rename_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00051">Request.h:51</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -916,30 +916,30 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00186">186</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  186</span>                          {</div>
-<div class="line"><span class="lineno">  187</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">seek_args</a>;</div>
-<div class="line"><span class="lineno">  188</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  189</span>        <a class="code hl_struct" href="structhandle.html">handle</a>* <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(args.fd);</div>
-<div class="line"><span class="lineno">  190</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  191</span>            errno = EBADF;</div>
-<div class="line"><span class="lineno">  192</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error seeking the file.&quot;</span>, EBADF, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  193</span>        }</div>
-<div class="line"><span class="lineno">  194</span> </div>
-<div class="line"><span class="lineno">  195</span>        <span class="keyword">auto</span> new_position = <a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#ab475f82d8f995d769c5d5273bff9a597">position</a> + args.offset;</div>
-<div class="line"><span class="lineno">  196</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#ac1e0742460ee4a4af2d02a6083758a8d">libfs_seek</a>(args.fd, new_position);</div>
-<div class="line"><span class="lineno">  197</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">modify_offset</a>(args.fd, new_position);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00182">182</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  182</span>                          {</div>
+<div class="line"><span class="lineno">  183</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">seek_args</a>;</div>
+<div class="line"><span class="lineno">  184</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  185</span>        <a class="code hl_struct" href="structhandle.html">handle</a>* <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(args.fd);</div>
+<div class="line"><span class="lineno">  186</span>        <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  187</span>            errno = EBADF;</div>
+<div class="line"><span class="lineno">  188</span>            <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error seeking the file.&quot;</span>, EBADF, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  189</span>        }</div>
+<div class="line"><span class="lineno">  190</span> </div>
+<div class="line"><span class="lineno">  191</span>        <span class="keyword">auto</span> new_position = <a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#ab475f82d8f995d769c5d5273bff9a597">position</a> + args.offset;</div>
+<div class="line"><span class="lineno">  192</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#ac1e0742460ee4a4af2d02a6083758a8d">libfs_seek</a>(args.fd, new_position);</div>
+<div class="line"><span class="lineno">  193</span>        <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#aab4ee20f7a650676c3b9bf649def79d4">modify_offset</a>(args.fd, new_position);</div>
+<div class="line"><span class="lineno">  194</span>    }</div>
+<div class="line"><span class="lineno">  195</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  196</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  197</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  198</span>    }</div>
-<div class="line"><span class="lineno">  199</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  200</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  201</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  202</span>    }</div>
-<div class="line"><span class="lineno">  203</span>}</div>
-<div class="ttc" id="aclass_daemon_html_ac1e0742460ee4a4af2d02a6083758a8d"><div class="ttname"><a href="class_daemon.html#ac1e0742460ee4a4af2d02a6083758a8d">Daemon::libfs_seek</a></div><div class="ttdeci">int libfs_seek(fd_type fd, long int offset)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00176">Daemon.cpp:176</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_a4ebc3f7be0e760cb757f3dbfd37c715b"><div class="ttname"><a href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">FileHandles::get_handle_by_fd</a></div><div class="ttdeci">handle * get_handle_by_fd(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00060">FileHandles.cpp:60</a></div></div>
-<div class="ttc" id="astructhandle_html"><div class="ttname"><a href="structhandle.html">handle</a></div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00023">FileHandles.h:23</a></div></div>
-<div class="ttc" id="astructhandle_html_ab475f82d8f995d769c5d5273bff9a597"><div class="ttname"><a href="structhandle.html#ab475f82d8f995d769c5d5273bff9a597">handle::position</a></div><div class="ttdeci">unsigned int position</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00027">FileHandles.h:27</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_a0f07ec26cb1a27d1dad1c88239f2ce7f"><div class="ttname"><a href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">lfs::arguments::seek_args</a></div><div class="ttdeci">struct seek_args seek_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00059">Request.h:59</a></div></div>
+<div class="line"><span class="lineno">  199</span>}</div>
+<div class="ttc" id="aclass_daemon_html_ac1e0742460ee4a4af2d02a6083758a8d"><div class="ttname"><a href="class_daemon.html#ac1e0742460ee4a4af2d02a6083758a8d">Daemon::libfs_seek</a></div><div class="ttdeci">int libfs_seek(fd_type fd, long int offset)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00172">Daemon.cpp:172</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_a4ebc3f7be0e760cb757f3dbfd37c715b"><div class="ttname"><a href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">FileHandles::get_handle_by_fd</a></div><div class="ttdeci">handle * get_handle_by_fd(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00056">FileHandles.cpp:56</a></div></div>
+<div class="ttc" id="astructhandle_html"><div class="ttname"><a href="structhandle.html">handle</a></div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00019">FileHandles.h:19</a></div></div>
+<div class="ttc" id="astructhandle_html_ab475f82d8f995d769c5d5273bff9a597"><div class="ttname"><a href="structhandle.html#ab475f82d8f995d769c5d5273bff9a597">handle::position</a></div><div class="ttdeci">unsigned int position</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00023">FileHandles.h:23</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_a0f07ec26cb1a27d1dad1c88239f2ce7f"><div class="ttname"><a href="unionlfs_1_1arguments.html#a0f07ec26cb1a27d1dad1c88239f2ce7f">lfs::arguments::seek_args</a></div><div class="ttdeci">struct seek_args seek_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00055">Request.h:55</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -993,21 +993,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00098">98</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   98</span>                            {</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">unlink_args</a>;</div>
-<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a5f2403caf311c11eee6dad11162ea00b">libfs_unlink</a>(args.name);</div>
-<div class="line"><span class="lineno">  102</span>        <a class="code hl_function" href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">send_notification</a>(args.name);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00094">94</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>                            {</div>
+<div class="line"><span class="lineno">   95</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">unlink_args</a>;</div>
+<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">   97</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a5f2403caf311c11eee6dad11162ea00b">libfs_unlink</a>(args.name);</div>
+<div class="line"><span class="lineno">   98</span>        <a class="code hl_function" href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">send_notification</a>(args.name);</div>
+<div class="line"><span class="lineno">   99</span>    }</div>
+<div class="line"><span class="lineno">  100</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  101</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  102</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  103</span>    }</div>
-<div class="line"><span class="lineno">  104</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  105</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  106</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  107</span>    }</div>
-<div class="line"><span class="lineno">  108</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a5f2403caf311c11eee6dad11162ea00b"><div class="ttname"><a href="class_daemon.html#a5f2403caf311c11eee6dad11162ea00b">Daemon::libfs_unlink</a></div><div class="ttdeci">int libfs_unlink(const char *name)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00089">Daemon.cpp:89</a></div></div>
-<div class="ttc" id="aclass_daemon_html_af717353d117d073a3275803c4e1d4fdf"><div class="ttname"><a href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">Daemon::send_notification</a></div><div class="ttdeci">void send_notification(char *fname)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00276">Daemon.cpp:276</a></div></div>
-<div class="ttc" id="aunionlfs_1_1arguments_html_ace7014eb1943513e5bf26eb86383914e"><div class="ttname"><a href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">lfs::arguments::unlink_args</a></div><div class="ttdeci">struct unlink_args unlink_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00056">Request.h:56</a></div></div>
+<div class="line"><span class="lineno">  104</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a5f2403caf311c11eee6dad11162ea00b"><div class="ttname"><a href="class_daemon.html#a5f2403caf311c11eee6dad11162ea00b">Daemon::libfs_unlink</a></div><div class="ttdeci">int libfs_unlink(const char *name)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00085">Daemon.cpp:85</a></div></div>
+<div class="ttc" id="aclass_daemon_html_af717353d117d073a3275803c4e1d4fdf"><div class="ttname"><a href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">Daemon::send_notification</a></div><div class="ttdeci">void send_notification(char *fname)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00272">Daemon.cpp:272</a></div></div>
+<div class="ttc" id="aunionlfs_1_1arguments_html_ace7014eb1943513e5bf26eb86383914e"><div class="ttname"><a href="unionlfs_1_1arguments.html#ace7014eb1943513e5bf26eb86383914e">lfs::arguments::unlink_args</a></div><div class="ttdeci">struct unlink_args unlink_args</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00052">Request.h:52</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1060,18 +1060,18 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00262">262</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  262</span>                              {</div>
-<div class="line"><span class="lineno">  263</span>    <span class="keyword">auto</span> fd = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a>;</div>
-<div class="line"><span class="lineno">  264</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  265</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a0d18472139823a8d9be4f79925b030d8">libfs_unnotify</a>(fd);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00258">258</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  258</span>                              {</div>
+<div class="line"><span class="lineno">  259</span>    <span class="keyword">auto</span> fd = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#aa85a4700f0107177002674a051b07320">close_notify_unnotify_args</a>.<a class="code hl_variable" href="structlfs_1_1close__notify__unnotify__args.html#ae8d74873f2a28adb28a30b40a37c2fca">fd</a>;</div>
+<div class="line"><span class="lineno">  260</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  261</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a0d18472139823a8d9be4f79925b030d8">libfs_unnotify</a>(fd);</div>
+<div class="line"><span class="lineno">  262</span>    }</div>
+<div class="line"><span class="lineno">  263</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  264</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  265</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  266</span>    }</div>
-<div class="line"><span class="lineno">  267</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  268</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  269</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  270</span>    }</div>
-<div class="line"><span class="lineno">  271</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a0d18472139823a8d9be4f79925b030d8"><div class="ttname"><a href="class_daemon.html#a0d18472139823a8d9be4f79925b030d8">Daemon::libfs_unnotify</a></div><div class="ttdeci">int libfs_unnotify(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00250">Daemon.cpp:250</a></div></div>
+<div class="line"><span class="lineno">  267</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a0d18472139823a8d9be4f79925b030d8"><div class="ttname"><a href="class_daemon.html#a0d18472139823a8d9be4f79925b030d8">Daemon::libfs_unnotify</a></div><div class="ttdeci">int libfs_unnotify(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00246">Daemon.cpp:246</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1125,21 +1125,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00163">163</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  163</span>                           {</div>
-<div class="line"><span class="lineno">  164</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a>;</div>
-<div class="line"><span class="lineno">  165</span>    <span class="keywordflow">try</span>{</div>
-<div class="line"><span class="lineno">  166</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a3092b9b39fcb6d83bb8175ce60ca3ebc">libfs_write</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, args.size);</div>
-<div class="line"><span class="lineno">  167</span>        <span class="keywordtype">char</span>* name = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(args.fd)-&gt;<a class="code hl_variable" href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">name</a>;</div>
-<div class="line"><span class="lineno">  168</span>        <a class="code hl_function" href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">send_notification</a>(name);</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00159">159</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  159</span>                           {</div>
+<div class="line"><span class="lineno">  160</span>    <span class="keyword">auto</span> args = <a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#af4fe00a00e6bb7f74a46119365ed0f9f">args</a>.<a class="code hl_variable" href="unionlfs_1_1arguments.html#a9ef3d5a81c8fdb1b87474f952d55b192">read_write_args</a>;</div>
+<div class="line"><span class="lineno">  161</span>    <span class="keywordflow">try</span>{</div>
+<div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = <a class="code hl_function" href="class_daemon.html#a3092b9b39fcb6d83bb8175ce60ca3ebc">libfs_write</a>(args.fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, args.size);</div>
+<div class="line"><span class="lineno">  163</span>        <span class="keywordtype">char</span>* name = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(args.fd)-&gt;<a class="code hl_variable" href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">name</a>;</div>
+<div class="line"><span class="lineno">  164</span>        <a class="code hl_function" href="class_daemon.html#af717353d117d073a3275803c4e1d4fdf">send_notification</a>(name);</div>
+<div class="line"><span class="lineno">  165</span>    }</div>
+<div class="line"><span class="lineno">  166</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
+<div class="line"><span class="lineno">  167</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
+<div class="line"><span class="lineno">  168</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
 <div class="line"><span class="lineno">  169</span>    }</div>
-<div class="line"><span class="lineno">  170</span>    <span class="keywordflow">catch</span>(<a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>){</div>
-<div class="line"><span class="lineno">  171</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#ae07d7a9e5b603c2403a2c519bf4c42a0">ret</a> = -1;</div>
-<div class="line"><span class="lineno">  172</span>        <a class="code hl_variable" href="class_daemon.html#afb7846ec0e68239b473304995308c616">res</a>-&gt;<a class="code hl_variable" href="structlfs_1_1result.html#a8b5d4836a4c2466ef6a312358ac3deff">lfs_errno</a> = errno;</div>
-<div class="line"><span class="lineno">  173</span>    }</div>
-<div class="line"><span class="lineno">  174</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a3092b9b39fcb6d83bb8175ce60ca3ebc"><div class="ttname"><a href="class_daemon.html#a3092b9b39fcb6d83bb8175ce60ca3ebc">Daemon::libfs_write</a></div><div class="ttdeci">int libfs_write(fd_type fd, const void *buf, unsigned int size)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00155">Daemon.cpp:155</a></div></div>
-<div class="ttc" id="astructhandle_html_a6f10989d3d5adfccd3078bc84c028bcf"><div class="ttname"><a href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">handle::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00029">FileHandles.h:29</a></div></div>
+<div class="line"><span class="lineno">  170</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a3092b9b39fcb6d83bb8175ce60ca3ebc"><div class="ttname"><a href="class_daemon.html#a3092b9b39fcb6d83bb8175ce60ca3ebc">Daemon::libfs_write</a></div><div class="ttdeci">int libfs_write(fd_type fd, const void *buf, unsigned int size)</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00151">Daemon.cpp:151</a></div></div>
+<div class="ttc" id="astructhandle_html_a6f10989d3d5adfccd3078bc84c028bcf"><div class="ttname"><a href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">handle::name</a></div><div class="ttdeci">char name[FILENAME_LENGTH]</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00025">FileHandles.h:25</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1205,14 +1205,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00051">51</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   51</span>                                                    {</div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordtype">int</span> result = chmod(name, mode);</div>
-<div class="line"><span class="lineno">   53</span>    <span class="keywordflow">if</span> (result == -1) {</div>
-<div class="line"><span class="lineno">   54</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error changing file mode.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   55</span>    }</div>
-<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   57</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00047">47</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                    {</div>
+<div class="line"><span class="lineno">   48</span>    <span class="keywordtype">int</span> result = chmod(name, mode);</div>
+<div class="line"><span class="lineno">   49</span>    <span class="keywordflow">if</span> (result == -1) {</div>
+<div class="line"><span class="lineno">   50</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error changing file mode.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   51</span>    }</div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1254,16 +1254,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00205">205</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  205</span>                                  {</div>
-<div class="line"><span class="lineno">  206</span>    <span class="keywordtype">int</span> result = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">close</a>(fd);</div>
-<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">if</span> (result == -1) {</div>
-<div class="line"><span class="lineno">  208</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error closing the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  209</span>    }</div>
-<div class="line"><span class="lineno">  210</span> </div>
-<div class="line"><span class="lineno">  211</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  212</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::close</a></div><div class="ttdeci">@ close</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00201">201</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  201</span>                                  {</div>
+<div class="line"><span class="lineno">  202</span>    <span class="keywordtype">int</span> result = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">close</a>(fd);</div>
+<div class="line"><span class="lineno">  203</span>    <span class="keywordflow">if</span> (result == -1) {</div>
+<div class="line"><span class="lineno">  204</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error closing the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  205</span>    }</div>
+<div class="line"><span class="lineno">  206</span> </div>
+<div class="line"><span class="lineno">  207</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  208</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::close</a></div><div class="ttdeci">@ close</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1315,23 +1315,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00021">21</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                                        {</div>
-<div class="line"><span class="lineno">   22</span>    <span class="keyword">struct </span>stat st;</div>
-<div class="line"><span class="lineno">   23</span>    <span class="keywordflow">if</span> (stat(name, &amp;st) == 0) {</div>
-<div class="line"><span class="lineno">   24</span>        <span class="comment">// File already exists</span></div>
-<div class="line"><span class="lineno">   25</span>        errno = EEXIST;</div>
-<div class="line"><span class="lineno">   26</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;File already exists.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <a class="code hl_typedef" href="_daemon_8h.html#a7195839de8d5aa53dcab16e3895f7699">fd_type</a> fileDescriptor = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">open</a>(name, O_CREAT | O_WRONLY, mode);</div>
-<div class="line"><span class="lineno">   30</span>    <span class="keywordflow">if</span> (fileDescriptor == -1) {</div>
-<div class="line"><span class="lineno">   31</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error creating the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
-<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">return</span> fileDescriptor;</div>
-<div class="line"><span class="lineno">   34</span>}</div>
-<div class="ttc" id="a_daemon_8h_html_a7195839de8d5aa53dcab16e3895f7699"><div class="ttname"><a href="_daemon_8h.html#a7195839de8d5aa53dcab16e3895f7699">fd_type</a></div><div class="ttdeci">int fd_type</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00016">Daemon.h:16</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::open</a></div><div class="ttdeci">@ open</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00017">17</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                        {</div>
+<div class="line"><span class="lineno">   18</span>    <span class="keyword">struct </span>stat st;</div>
+<div class="line"><span class="lineno">   19</span>    <span class="keywordflow">if</span> (stat(name, &amp;st) == 0) {</div>
+<div class="line"><span class="lineno">   20</span>        <span class="comment">// File already exists</span></div>
+<div class="line"><span class="lineno">   21</span>        errno = EEXIST;</div>
+<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;File already exists.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   23</span>    }</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>    <a class="code hl_typedef" href="_daemon_8h.html#a7195839de8d5aa53dcab16e3895f7699">fd_type</a> fileDescriptor = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">open</a>(name, O_CREAT | O_WRONLY, mode);</div>
+<div class="line"><span class="lineno">   26</span>    <span class="keywordflow">if</span> (fileDescriptor == -1) {</div>
+<div class="line"><span class="lineno">   27</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error creating the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> fileDescriptor;</div>
+<div class="line"><span class="lineno">   30</span>}</div>
+<div class="ttc" id="a_daemon_8h_html_a7195839de8d5aa53dcab16e3895f7699"><div class="ttname"><a href="_daemon_8h.html#a7195839de8d5aa53dcab16e3895f7699">fd_type</a></div><div class="ttdeci">int fd_type</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00012">Daemon.h:12</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::open</a></div><div class="ttdeci">@ open</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1373,21 +1373,21 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00227">227</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  227</span>                                   {</div>
-<div class="line"><span class="lineno">  228</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">  229</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  230</span>        errno = EBADF;</div>
-<div class="line"><span class="lineno">  231</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error notifying the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  232</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>) {</div>
-<div class="line"><span class="lineno">  233</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  234</span>    }</div>
-<div class="line"><span class="lineno">  235</span>    <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a15edce6e48c47a226c0a117d58f49997">add_notification</a>(fd);</div>
-<div class="line"><span class="lineno">  236</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  237</span>}</div>
-<div class="ttc" id="a_file_handles_8h_html_ae0353b6caf99d7c3f7597e469c638178"><div class="ttname"><a href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a></div><div class="ttdeci">#define NOTIFY_FLAG</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00019">FileHandles.h:19</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_a15edce6e48c47a226c0a117d58f49997"><div class="ttname"><a href="class_file_handles.html#a15edce6e48c47a226c0a117d58f49997">FileHandles::add_notification</a></div><div class="ttdeci">void add_notification(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00043">FileHandles.cpp:43</a></div></div>
-<div class="ttc" id="astructhandle_html_afb72c66ee455347b4f75eb90a79baa9a"><div class="ttname"><a href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">handle::flags</a></div><div class="ttdeci">int flags</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00028">FileHandles.h:28</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00223">223</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  223</span>                                   {</div>
+<div class="line"><span class="lineno">  224</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">  225</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  226</span>        errno = EBADF;</div>
+<div class="line"><span class="lineno">  227</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error notifying the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  228</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>) {</div>
+<div class="line"><span class="lineno">  229</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  230</span>    }</div>
+<div class="line"><span class="lineno">  231</span>    <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a15edce6e48c47a226c0a117d58f49997">add_notification</a>(fd);</div>
+<div class="line"><span class="lineno">  232</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  233</span>}</div>
+<div class="ttc" id="a_file_handles_8h_html_ae0353b6caf99d7c3f7597e469c638178"><div class="ttname"><a href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a></div><div class="ttdeci">#define NOTIFY_FLAG</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00015">FileHandles.h:15</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_a15edce6e48c47a226c0a117d58f49997"><div class="ttname"><a href="class_file_handles.html#a15edce6e48c47a226c0a117d58f49997">FileHandles::add_notification</a></div><div class="ttdeci">void add_notification(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00039">FileHandles.cpp:39</a></div></div>
+<div class="ttc" id="astructhandle_html_afb72c66ee455347b4f75eb90a79baa9a"><div class="ttname"><a href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">handle::flags</a></div><div class="ttdeci">int flags</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00024">FileHandles.h:24</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1452,15 +1452,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00110">110</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  110</span>                                                      {</div>
-<div class="line"><span class="lineno">  111</span>    <span class="keywordtype">int</span> fileDescriptor = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">open</a>(name, flags);</div>
-<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">if</span> (fileDescriptor == -1) {</div>
-<div class="line"><span class="lineno">  113</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error opening the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  114</span>    }</div>
-<div class="line"><span class="lineno">  115</span> </div>
-<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> fileDescriptor;</div>
-<div class="line"><span class="lineno">  117</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00106">106</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  106</span>                                                      {</div>
+<div class="line"><span class="lineno">  107</span>    <span class="keywordtype">int</span> fileDescriptor = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">open</a>(name, flags);</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">if</span> (fileDescriptor == -1) {</div>
+<div class="line"><span class="lineno">  109</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error opening the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  110</span>    }</div>
+<div class="line"><span class="lineno">  111</span> </div>
+<div class="line"><span class="lineno">  112</span>    <span class="keywordflow">return</span> fileDescriptor;</div>
+<div class="line"><span class="lineno">  113</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1518,17 +1518,17 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00133">133</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  133</span>                                                               {</div>
-<div class="line"><span class="lineno">  134</span>    std::cout &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes to read\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  135</span>    ssize_t bytesRead = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">read</a>(fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, size);</div>
-<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">if</span> (bytesRead == -1) {</div>
-<div class="line"><span class="lineno">  137</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error reading from the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  138</span>    }</div>
-<div class="line"><span class="lineno">  139</span> </div>
-<div class="line"><span class="lineno">  140</span>    <span class="keywordflow">return</span> bytesRead;</div>
-<div class="line"><span class="lineno">  141</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::read</a></div><div class="ttdeci">@ read</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00129">129</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  129</span>                                                               {</div>
+<div class="line"><span class="lineno">  130</span>    std::cout &lt;&lt; size &lt;&lt; <span class="stringliteral">&quot; bytes to read\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  131</span>    ssize_t bytesRead = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">read</a>(fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, size);</div>
+<div class="line"><span class="lineno">  132</span>    <span class="keywordflow">if</span> (bytesRead == -1) {</div>
+<div class="line"><span class="lineno">  133</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error reading from the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  134</span>    }</div>
+<div class="line"><span class="lineno">  135</span> </div>
+<div class="line"><span class="lineno">  136</span>    <span class="keywordflow">return</span> bytesRead;</div>
+<div class="line"><span class="lineno">  137</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::read</a></div><div class="ttdeci">@ read</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1580,14 +1580,14 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00070">70</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                                                                     {</div>
-<div class="line"><span class="lineno">   71</span>    <span class="keywordtype">int</span> result = std::rename(oldName, newName);</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">if</span> (result == -1) {</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error renaming the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   74</span>    }</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   76</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00066">66</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                                                     {</div>
+<div class="line"><span class="lineno">   67</span>    <span class="keywordtype">int</span> result = std::rename(oldName, newName);</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">if</span> (result == -1) {</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error renaming the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   70</span>    }</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   72</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1639,16 +1639,16 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00176">176</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  176</span>                                              {</div>
-<div class="line"><span class="lineno">  177</span>    off_t result = lseek(fd, offset, SEEK_SET);</div>
-<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">if</span> (result == -1) {</div>
-<div class="line"><span class="lineno">  179</span>        <span class="keywordtype">int</span> error = errno; <span class="comment">// Store the errno value before it changes</span></div>
-<div class="line"><span class="lineno">  180</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error seeking the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  181</span>    }</div>
-<div class="line"><span class="lineno">  182</span> </div>
-<div class="line"><span class="lineno">  183</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">  184</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00172">172</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  172</span>                                              {</div>
+<div class="line"><span class="lineno">  173</span>    off_t result = lseek(fd, offset, SEEK_SET);</div>
+<div class="line"><span class="lineno">  174</span>    <span class="keywordflow">if</span> (result == -1) {</div>
+<div class="line"><span class="lineno">  175</span>        <span class="keywordtype">int</span> error = errno; <span class="comment">// Store the errno value before it changes</span></div>
+<div class="line"><span class="lineno">  176</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error seeking the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  177</span>    }</div>
+<div class="line"><span class="lineno">  178</span> </div>
+<div class="line"><span class="lineno">  179</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">  180</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1690,15 +1690,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00089">89</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   89</span>                                         {</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keywordtype">int</span> result = std::remove(name);</div>
-<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (result == -1) {</div>
-<div class="line"><span class="lineno">   92</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error unlinking the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   93</span>    }</div>
-<div class="line"><span class="lineno">   94</span> </div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">return</span> result;</div>
-<div class="line"><span class="lineno">   96</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00085">85</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   85</span>                                         {</div>
+<div class="line"><span class="lineno">   86</span>    <span class="keywordtype">int</span> result = std::remove(name);</div>
+<div class="line"><span class="lineno">   87</span>    <span class="keywordflow">if</span> (result == -1) {</div>
+<div class="line"><span class="lineno">   88</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error unlinking the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   89</span>    }</div>
+<div class="line"><span class="lineno">   90</span> </div>
+<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">return</span> result;</div>
+<div class="line"><span class="lineno">   92</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1740,19 +1740,19 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00250">250</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  250</span>                                     {</div>
-<div class="line"><span class="lineno">  251</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
-<div class="line"><span class="lineno">  253</span>        errno = EBADF;</div>
-<div class="line"><span class="lineno">  254</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error unnotifying the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  255</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>)) {</div>
-<div class="line"><span class="lineno">  256</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">  257</span>    }</div>
-<div class="line"><span class="lineno">  258</span>    <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a43dfa8779f5fe3f00d587050dc3b02cc">remove_notification</a>(fd);</div>
-<div class="line"><span class="lineno">  259</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">  260</span>}</div>
-<div class="ttc" id="aclass_file_handles_html_a43dfa8779f5fe3f00d587050dc3b02cc"><div class="ttname"><a href="class_file_handles.html#a43dfa8779f5fe3f00d587050dc3b02cc">FileHandles::remove_notification</a></div><div class="ttdeci">void remove_notification(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00048">FileHandles.cpp:48</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00246">246</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  246</span>                                     {</div>
+<div class="line"><span class="lineno">  247</span>    <span class="keyword">auto</span> <a class="code hl_struct" href="structhandle.html">handle</a> = <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">  248</span>    <span class="keywordflow">if</span> (<a class="code hl_struct" href="structhandle.html">handle</a> == <span class="keyword">nullptr</span>) {</div>
+<div class="line"><span class="lineno">  249</span>        errno = EBADF;</div>
+<div class="line"><span class="lineno">  250</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error unnotifying the file.&quot;</span>, errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  251</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (!(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>)) {</div>
+<div class="line"><span class="lineno">  252</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">  253</span>    }</div>
+<div class="line"><span class="lineno">  254</span>    <a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.<a class="code hl_function" href="class_file_handles.html#a43dfa8779f5fe3f00d587050dc3b02cc">remove_notification</a>(fd);</div>
+<div class="line"><span class="lineno">  255</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">  256</span>}</div>
+<div class="ttc" id="aclass_file_handles_html_a43dfa8779f5fe3f00d587050dc3b02cc"><div class="ttname"><a href="class_file_handles.html#a43dfa8779f5fe3f00d587050dc3b02cc">FileHandles::remove_notification</a></div><div class="ttdeci">void remove_notification(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00044">FileHandles.cpp:44</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1823,15 +1823,15 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00155">155</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  155</span>                                                                      {</div>
-<div class="line"><span class="lineno">  156</span>    ssize_t bytesWritten = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">write</a>(fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, size);</div>
-<div class="line"><span class="lineno">  157</span>    <span class="keywordflow">if</span> (bytesWritten == -1) {</div>
-<div class="line"><span class="lineno">  158</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error writing to the file: &quot;</span> + std::string(strerror(errno)), errno, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">  159</span>    }</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">return</span> bytesWritten;</div>
-<div class="line"><span class="lineno">  161</span>}</div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::write</a></div><div class="ttdeci">@ write</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00151">151</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  151</span>                                                                      {</div>
+<div class="line"><span class="lineno">  152</span>    ssize_t bytesWritten = <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">write</a>(fd, <a class="code hl_variable" href="class_daemon.html#a8b1d53ca34bbecf67f670cbecd46d3e3">buf</a>, size);</div>
+<div class="line"><span class="lineno">  153</span>    <span class="keywordflow">if</span> (bytesWritten == -1) {</div>
+<div class="line"><span class="lineno">  154</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_daemon_exception.html">DaemonException</a>(<span class="stringliteral">&quot;Error writing to the file: &quot;</span> + std::string(strerror(errno)), errno, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">  155</span>    }</div>
+<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">return</span> bytesWritten;</div>
+<div class="line"><span class="lineno">  157</span>}</div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::write</a></div><div class="ttdeci">@ write</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -1872,63 +1872,63 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00297">297</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  297</span>                             {</div>
-<div class="line"><span class="lineno">  298</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a1fc7ef608b76015210d63d907ae28a73">func</a>) {</div>
-<div class="line"><span class="lineno">  299</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::function::create</a>:</div>
-<div class="line"><span class="lineno">  300</span>            <a class="code hl_function" href="class_daemon.html#a19344896bed8e6b23ef555176b543a1d">execute_create</a>();</div>
-<div class="line"><span class="lineno">  301</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  302</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::function::chmode</a>:</div>
-<div class="line"><span class="lineno">  303</span>            <a class="code hl_function" href="class_daemon.html#a42889c3b75651b39d6caf214ea1ac411">execute_chmode</a>();</div>
-<div class="line"><span class="lineno">  304</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  305</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::function::rename</a>:</div>
-<div class="line"><span class="lineno">  306</span>            <a class="code hl_function" href="class_daemon.html#a653eb78435671af44cd217956635e54a">execute_rename</a>();</div>
-<div class="line"><span class="lineno">  307</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  308</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::function::unlink</a>:</div>
-<div class="line"><span class="lineno">  309</span>            <a class="code hl_function" href="class_daemon.html#a4d519c800a57ede793acc1c6f5ee735b">execute_unlink</a>();</div>
-<div class="line"><span class="lineno">  310</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  311</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::function::open</a>:</div>
-<div class="line"><span class="lineno">  312</span>            <a class="code hl_function" href="class_daemon.html#a07ab25e0fa6b7f7226010a0fd50959f0">execute_open</a>();</div>
-<div class="line"><span class="lineno">  313</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  314</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::function::read</a>:</div>
-<div class="line"><span class="lineno">  315</span>            <a class="code hl_function" href="class_daemon.html#a288fe2ef718e3ec836ff37c225217b62">execute_read</a>();</div>
-<div class="line"><span class="lineno">  316</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  317</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::function::write</a>:</div>
-<div class="line"><span class="lineno">  318</span>            <a class="code hl_function" href="class_daemon.html#abfa9c07dd4633cd607581560c58d7871">execute_write</a>();</div>
-<div class="line"><span class="lineno">  319</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  320</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::function::seek</a>:</div>
-<div class="line"><span class="lineno">  321</span>            <a class="code hl_function" href="class_daemon.html#ab41a738f5a086cfdbf22b7c6235f4d01">execute_seek</a>();</div>
-<div class="line"><span class="lineno">  322</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  323</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::function::close</a>:</div>
-<div class="line"><span class="lineno">  324</span>            <a class="code hl_function" href="class_daemon.html#a163e28465e941d888cd40de4e6e40a1e">execute_close</a>();</div>
-<div class="line"><span class="lineno">  325</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  326</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::function::notify</a>:</div>
-<div class="line"><span class="lineno">  327</span>            <a class="code hl_function" href="class_daemon.html#aeab69b3018dee8c9c271fcd77be5cec3">execute_notify</a>();</div>
-<div class="line"><span class="lineno">  328</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  329</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::function::unnotify</a>:</div>
-<div class="line"><span class="lineno">  330</span>            <a class="code hl_function" href="class_daemon.html#a0dc359c0b504eb3df90497911cee8082">execute_unnotify</a>();</div>
-<div class="line"><span class="lineno">  331</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">  332</span>    }</div>
-<div class="line"><span class="lineno">  333</span>}</div>
-<div class="ttc" id="aclass_daemon_html_a07ab25e0fa6b7f7226010a0fd50959f0"><div class="ttname"><a href="class_daemon.html#a07ab25e0fa6b7f7226010a0fd50959f0">Daemon::execute_open</a></div><div class="ttdeci">void execute_open()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00119">Daemon.cpp:119</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a0dc359c0b504eb3df90497911cee8082"><div class="ttname"><a href="class_daemon.html#a0dc359c0b504eb3df90497911cee8082">Daemon::execute_unnotify</a></div><div class="ttdeci">void execute_unnotify()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00262">Daemon.cpp:262</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a163e28465e941d888cd40de4e6e40a1e"><div class="ttname"><a href="class_daemon.html#a163e28465e941d888cd40de4e6e40a1e">Daemon::execute_close</a></div><div class="ttdeci">void execute_close()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00214">Daemon.cpp:214</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a19344896bed8e6b23ef555176b543a1d"><div class="ttname"><a href="class_daemon.html#a19344896bed8e6b23ef555176b543a1d">Daemon::execute_create</a></div><div class="ttdeci">void execute_create()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00036">Daemon.cpp:36</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a288fe2ef718e3ec836ff37c225217b62"><div class="ttname"><a href="class_daemon.html#a288fe2ef718e3ec836ff37c225217b62">Daemon::execute_read</a></div><div class="ttdeci">void execute_read()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00143">Daemon.cpp:143</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a42889c3b75651b39d6caf214ea1ac411"><div class="ttname"><a href="class_daemon.html#a42889c3b75651b39d6caf214ea1ac411">Daemon::execute_chmode</a></div><div class="ttdeci">void execute_chmode()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00059">Daemon.cpp:59</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a4d519c800a57ede793acc1c6f5ee735b"><div class="ttname"><a href="class_daemon.html#a4d519c800a57ede793acc1c6f5ee735b">Daemon::execute_unlink</a></div><div class="ttdeci">void execute_unlink()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00098">Daemon.cpp:98</a></div></div>
-<div class="ttc" id="aclass_daemon_html_a653eb78435671af44cd217956635e54a"><div class="ttname"><a href="class_daemon.html#a653eb78435671af44cd217956635e54a">Daemon::execute_rename</a></div><div class="ttdeci">void execute_rename()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00078">Daemon.cpp:78</a></div></div>
-<div class="ttc" id="aclass_daemon_html_ab41a738f5a086cfdbf22b7c6235f4d01"><div class="ttname"><a href="class_daemon.html#ab41a738f5a086cfdbf22b7c6235f4d01">Daemon::execute_seek</a></div><div class="ttdeci">void execute_seek()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00186">Daemon.cpp:186</a></div></div>
-<div class="ttc" id="aclass_daemon_html_abfa9c07dd4633cd607581560c58d7871"><div class="ttname"><a href="class_daemon.html#abfa9c07dd4633cd607581560c58d7871">Daemon::execute_write</a></div><div class="ttdeci">void execute_write()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00163">Daemon.cpp:163</a></div></div>
-<div class="ttc" id="aclass_daemon_html_aeab69b3018dee8c9c271fcd77be5cec3"><div class="ttname"><a href="class_daemon.html#aeab69b3018dee8c9c271fcd77be5cec3">Daemon::execute_notify</a></div><div class="ttdeci">void execute_notify()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00239">Daemon.cpp:239</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::notify</a></div><div class="ttdeci">@ notify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::seek</a></div><div class="ttdeci">@ seek</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::chmode</a></div><div class="ttdeci">@ chmode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::rename</a></div><div class="ttdeci">@ rename</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::unnotify</a></div><div class="ttdeci">@ unnotify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00051">Request.h:50</a></div></div>
-<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::unlink</a></div><div class="ttdeci">@ unlink</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00050">Request.h:50</a></div></div>
-<div class="ttc" id="astructlfs_1_1request_html_a1fc7ef608b76015210d63d907ae28a73"><div class="ttname"><a href="structlfs_1_1request.html#a1fc7ef608b76015210d63d907ae28a73">lfs::request::func</a></div><div class="ttdeci">function func</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00065">Request.h:65</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00293">293</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  293</span>                             {</div>
+<div class="line"><span class="lineno">  294</span>    <span class="keywordflow">switch</span> (<a class="code hl_variable" href="class_daemon.html#acf74f8eacfaa7ac9cfe33bc9d24d5534">req</a>-&gt;<a class="code hl_variable" href="structlfs_1_1request.html#a1fc7ef608b76015210d63d907ae28a73">func</a>) {</div>
+<div class="line"><span class="lineno">  295</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::function::create</a>:</div>
+<div class="line"><span class="lineno">  296</span>            <a class="code hl_function" href="class_daemon.html#a19344896bed8e6b23ef555176b543a1d">execute_create</a>();</div>
+<div class="line"><span class="lineno">  297</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  298</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::function::chmode</a>:</div>
+<div class="line"><span class="lineno">  299</span>            <a class="code hl_function" href="class_daemon.html#a42889c3b75651b39d6caf214ea1ac411">execute_chmode</a>();</div>
+<div class="line"><span class="lineno">  300</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  301</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::function::rename</a>:</div>
+<div class="line"><span class="lineno">  302</span>            <a class="code hl_function" href="class_daemon.html#a653eb78435671af44cd217956635e54a">execute_rename</a>();</div>
+<div class="line"><span class="lineno">  303</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  304</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::function::unlink</a>:</div>
+<div class="line"><span class="lineno">  305</span>            <a class="code hl_function" href="class_daemon.html#a4d519c800a57ede793acc1c6f5ee735b">execute_unlink</a>();</div>
+<div class="line"><span class="lineno">  306</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  307</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a2086dce77eafa8dc2959ef54dfaad3e2">lfs::function::open</a>:</div>
+<div class="line"><span class="lineno">  308</span>            <a class="code hl_function" href="class_daemon.html#a07ab25e0fa6b7f7226010a0fd50959f0">execute_open</a>();</div>
+<div class="line"><span class="lineno">  309</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  310</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a6120b69e1370f9adb955e8bcc160cf40">lfs::function::read</a>:</div>
+<div class="line"><span class="lineno">  311</span>            <a class="code hl_function" href="class_daemon.html#a288fe2ef718e3ec836ff37c225217b62">execute_read</a>();</div>
+<div class="line"><span class="lineno">  312</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  313</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a79e3daa7eda88a6beaa6b93035dc88f9">lfs::function::write</a>:</div>
+<div class="line"><span class="lineno">  314</span>            <a class="code hl_function" href="class_daemon.html#abfa9c07dd4633cd607581560c58d7871">execute_write</a>();</div>
+<div class="line"><span class="lineno">  315</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  316</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::function::seek</a>:</div>
+<div class="line"><span class="lineno">  317</span>            <a class="code hl_function" href="class_daemon.html#ab41a738f5a086cfdbf22b7c6235f4d01">execute_seek</a>();</div>
+<div class="line"><span class="lineno">  318</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  319</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a4c64ba9658d23b52e62cddea1d6b5975">lfs::function::close</a>:</div>
+<div class="line"><span class="lineno">  320</span>            <a class="code hl_function" href="class_daemon.html#a163e28465e941d888cd40de4e6e40a1e">execute_close</a>();</div>
+<div class="line"><span class="lineno">  321</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  322</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::function::notify</a>:</div>
+<div class="line"><span class="lineno">  323</span>            <a class="code hl_function" href="class_daemon.html#aeab69b3018dee8c9c271fcd77be5cec3">execute_notify</a>();</div>
+<div class="line"><span class="lineno">  324</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  325</span>        <span class="keywordflow">case</span> <a class="code hl_enumvalue" href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::function::unnotify</a>:</div>
+<div class="line"><span class="lineno">  326</span>            <a class="code hl_function" href="class_daemon.html#a0dc359c0b504eb3df90497911cee8082">execute_unnotify</a>();</div>
+<div class="line"><span class="lineno">  327</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">  328</span>    }</div>
+<div class="line"><span class="lineno">  329</span>}</div>
+<div class="ttc" id="aclass_daemon_html_a07ab25e0fa6b7f7226010a0fd50959f0"><div class="ttname"><a href="class_daemon.html#a07ab25e0fa6b7f7226010a0fd50959f0">Daemon::execute_open</a></div><div class="ttdeci">void execute_open()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00115">Daemon.cpp:115</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a0dc359c0b504eb3df90497911cee8082"><div class="ttname"><a href="class_daemon.html#a0dc359c0b504eb3df90497911cee8082">Daemon::execute_unnotify</a></div><div class="ttdeci">void execute_unnotify()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00258">Daemon.cpp:258</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a163e28465e941d888cd40de4e6e40a1e"><div class="ttname"><a href="class_daemon.html#a163e28465e941d888cd40de4e6e40a1e">Daemon::execute_close</a></div><div class="ttdeci">void execute_close()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00210">Daemon.cpp:210</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a19344896bed8e6b23ef555176b543a1d"><div class="ttname"><a href="class_daemon.html#a19344896bed8e6b23ef555176b543a1d">Daemon::execute_create</a></div><div class="ttdeci">void execute_create()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00032">Daemon.cpp:32</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a288fe2ef718e3ec836ff37c225217b62"><div class="ttname"><a href="class_daemon.html#a288fe2ef718e3ec836ff37c225217b62">Daemon::execute_read</a></div><div class="ttdeci">void execute_read()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00139">Daemon.cpp:139</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a42889c3b75651b39d6caf214ea1ac411"><div class="ttname"><a href="class_daemon.html#a42889c3b75651b39d6caf214ea1ac411">Daemon::execute_chmode</a></div><div class="ttdeci">void execute_chmode()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00055">Daemon.cpp:55</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a4d519c800a57ede793acc1c6f5ee735b"><div class="ttname"><a href="class_daemon.html#a4d519c800a57ede793acc1c6f5ee735b">Daemon::execute_unlink</a></div><div class="ttdeci">void execute_unlink()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00094">Daemon.cpp:94</a></div></div>
+<div class="ttc" id="aclass_daemon_html_a653eb78435671af44cd217956635e54a"><div class="ttname"><a href="class_daemon.html#a653eb78435671af44cd217956635e54a">Daemon::execute_rename</a></div><div class="ttdeci">void execute_rename()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00074">Daemon.cpp:74</a></div></div>
+<div class="ttc" id="aclass_daemon_html_ab41a738f5a086cfdbf22b7c6235f4d01"><div class="ttname"><a href="class_daemon.html#ab41a738f5a086cfdbf22b7c6235f4d01">Daemon::execute_seek</a></div><div class="ttdeci">void execute_seek()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00182">Daemon.cpp:182</a></div></div>
+<div class="ttc" id="aclass_daemon_html_abfa9c07dd4633cd607581560c58d7871"><div class="ttname"><a href="class_daemon.html#abfa9c07dd4633cd607581560c58d7871">Daemon::execute_write</a></div><div class="ttdeci">void execute_write()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00159">Daemon.cpp:159</a></div></div>
+<div class="ttc" id="aclass_daemon_html_aeab69b3018dee8c9c271fcd77be5cec3"><div class="ttname"><a href="class_daemon.html#aeab69b3018dee8c9c271fcd77be5cec3">Daemon::execute_notify</a></div><div class="ttdeci">void execute_notify()</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8cpp_source.html#l00235">Daemon.cpp:235</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a149c3da6b09f9ca74d4a91722bae12dd">lfs::notify</a></div><div class="ttdeci">@ notify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a29fb68f46b8e249764e57f6be8b3df26">lfs::seek</a></div><div class="ttdeci">@ seek</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a5b628547f24de0672dfc10d9ac7d9963">lfs::chmode</a></div><div class="ttdeci">@ chmode</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34a7236c37387e6dc146077ac3b61e42ac7">lfs::create</a></div><div class="ttdeci">@ create</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ab1c5fb06c49b29f8e22913b75b8a93d3">lfs::rename</a></div><div class="ttdeci">@ rename</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ac93e012c4958bd52bfb09230eb5f1865">lfs::unnotify</a></div><div class="ttdeci">@ unnotify</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00047">Request.h:46</a></div></div>
+<div class="ttc" id="anamespacelfs_html_a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646"><div class="ttname"><a href="namespacelfs.html#a9517332ecde3a22bdf0fc35200ce0e34ae650ed88e6ad9fbb001cf961e2970646">lfs::unlink</a></div><div class="ttdeci">@ unlink</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00046">Request.h:46</a></div></div>
+<div class="ttc" id="astructlfs_1_1request_html_a1fc7ef608b76015210d63d907ae28a73"><div class="ttname"><a href="structlfs_1_1request.html#a1fc7ef608b76015210d63d907ae28a73">lfs::request::func</a></div><div class="ttdeci">function func</div><div class="ttdef"><b>Definition</b> <a href="_request_8h_source.html#l00061">Request.h:61</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2044,22 +2044,22 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00276">276</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  276</span>                                          {</div>
-<div class="line"><span class="lineno">  277</span>    std::vector&lt;pid_t&gt; owners;</div>
-<div class="line"><span class="lineno">  278</span> </div>
-<div class="line"><span class="lineno">  279</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structhandle.html">handle</a> : this-&gt;<a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.getHandles()) {</div>
-<div class="line"><span class="lineno">  280</span>        <span class="keywordflow">if</span> ((<a class="code hl_struct" href="structhandle.html">handle</a> != <span class="keyword">nullptr</span>) &amp;&amp; (<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>) &amp;&amp; (std::strcmp(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">name</a>, fname) == 0)) {</div>
-<div class="line"><span class="lineno">  281</span>            owners.push_back(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#a9ef7153f3716af210a02fc1ca2f30d20">owner</a>);</div>
-<div class="line"><span class="lineno">  282</span>        }</div>
-<div class="line"><span class="lineno">  283</span>    }</div>
-<div class="line"><span class="lineno">  284</span> </div>
-<div class="line"><span class="lineno">  285</span>    <span class="keywordflow">for</span> (pid_t owner : owners) {</div>
-<div class="line"><span class="lineno">  286</span>        <span class="comment">// Send the SIGUSR1 signal to each owner</span></div>
-<div class="line"><span class="lineno">  287</span>        kill(owner, SIGUSR1);</div>
-<div class="line"><span class="lineno">  288</span>    }</div>
-<div class="line"><span class="lineno">  289</span>}</div>
-<div class="ttc" id="astructhandle_html_a9ef7153f3716af210a02fc1ca2f30d20"><div class="ttname"><a href="structhandle.html#a9ef7153f3716af210a02fc1ca2f30d20">handle::owner</a></div><div class="ttdeci">pid_t owner</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00026">FileHandles.h:26</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_daemon_8cpp_source.html#l00272">272</a> of file <a class="el" href="_daemon_8cpp_source.html">Daemon.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  272</span>                                          {</div>
+<div class="line"><span class="lineno">  273</span>    std::vector&lt;pid_t&gt; owners;</div>
+<div class="line"><span class="lineno">  274</span> </div>
+<div class="line"><span class="lineno">  275</span>    <span class="keywordflow">for</span> (<span class="keyword">const</span> <span class="keyword">auto</span>&amp; <a class="code hl_struct" href="structhandle.html">handle</a> : this-&gt;<a class="code hl_variable" href="class_daemon.html#a30f8f5d999ff2d9753d39e9a629b0355">fileHandles</a>.getHandles()) {</div>
+<div class="line"><span class="lineno">  276</span>        <span class="keywordflow">if</span> ((<a class="code hl_struct" href="structhandle.html">handle</a> != <span class="keyword">nullptr</span>) &amp;&amp; (<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#afb72c66ee455347b4f75eb90a79baa9a">flags</a> &amp; <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>) &amp;&amp; (std::strcmp(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#a6f10989d3d5adfccd3078bc84c028bcf">name</a>, fname) == 0)) {</div>
+<div class="line"><span class="lineno">  277</span>            owners.push_back(<a class="code hl_struct" href="structhandle.html">handle</a>-&gt;<a class="code hl_variable" href="structhandle.html#a9ef7153f3716af210a02fc1ca2f30d20">owner</a>);</div>
+<div class="line"><span class="lineno">  278</span>        }</div>
+<div class="line"><span class="lineno">  279</span>    }</div>
+<div class="line"><span class="lineno">  280</span> </div>
+<div class="line"><span class="lineno">  281</span>    <span class="keywordflow">for</span> (pid_t owner : owners) {</div>
+<div class="line"><span class="lineno">  282</span>        <span class="comment">// Send the SIGUSR1 signal to each owner</span></div>
+<div class="line"><span class="lineno">  283</span>        kill(owner, SIGUSR1);</div>
+<div class="line"><span class="lineno">  284</span>    }</div>
+<div class="line"><span class="lineno">  285</span>}</div>
+<div class="ttc" id="astructhandle_html_a9ef7153f3716af210a02fc1ca2f30d20"><div class="ttname"><a href="structhandle.html#a9ef7153f3716af210a02fc1ca2f30d20">handle::owner</a></div><div class="ttdeci">pid_t owner</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00022">FileHandles.h:22</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -2111,7 +2111,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00070">70</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00066">66</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>
@@ -2135,7 +2135,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00064">64</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00060">60</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>
@@ -2159,7 +2159,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00068">68</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00064">64</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>
@@ -2183,7 +2183,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00069">69</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00065">65</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>
@@ -2207,7 +2207,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00066">66</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00062">62</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>
@@ -2231,7 +2231,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00065">65</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_daemon_8h_source.html#l00061">61</a> of file <a class="el" href="_daemon_8h_source.html">Daemon.h</a>.</p>
 
 </div>
 </div>

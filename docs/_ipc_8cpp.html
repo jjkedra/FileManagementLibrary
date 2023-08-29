@@ -177,7 +177,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00015">15</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00011">11</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
 
 </div>
 </div>
@@ -193,7 +193,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00016">16</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00012">12</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
 
 </div>
 </div>
@@ -209,7 +209,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00017">17</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00013">13</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
 
 </div>
 </div>
@@ -225,7 +225,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00018">18</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00014">14</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
 
 </div>
 </div>
@@ -268,14 +268,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00073">73</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   73</span>                                                                                 {</div>
-<div class="line"><span class="lineno">   74</span>    <span class="keyword">struct </span>sembuf semops[<a class="code hl_define" href="_ipc_8cpp.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a>] = {sem_num, diff, flag};</div>
-<div class="line"><span class="lineno">   75</span>    <span class="keywordflow">if</span> (semop(sems_id, semops, 1) == -1) {</div>
-<div class="line"><span class="lineno">   76</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;semop() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="line"><span class="lineno">   78</span>}</div>
-<div class="ttc" id="a_ipc_8cpp_html_af343e53b872e3a1b24ce1697e0cfd28c"><div class="ttname"><a href="_ipc_8cpp.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a></div><div class="ttdeci">#define N_SEMS</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00015">Ipc.cpp:15</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00069">69</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                                                                                 {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keyword">struct </span>sembuf semops[<a class="code hl_define" href="_ipc_8cpp.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a>] = {sem_num, diff, flag};</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (semop(sems_id, semops, 1) == -1) {</div>
+<div class="line"><span class="lineno">   72</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;semop() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>}</div>
+<div class="ttc" id="a_ipc_8cpp_html_af343e53b872e3a1b24ce1697e0cfd28c"><div class="ttname"><a href="_ipc_8cpp.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a></div><div class="ttdeci">#define N_SEMS</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00011">Ipc.cpp:11</a></div></div>
 <div class="ttc" id="aclass_library_exception_html"><div class="ttname"><a href="class_library_exception.html">LibraryException</a></div><div class="ttdef"><b>Definition</b> <a href="_library_exception_8h_source.html#l00007">LibraryException.h:7</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -490,11 +490,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00020">20</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                       {</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">return</span> std::string(getenv(<span class="stringliteral">&quot;HOME&quot;</span>)) + <span class="stringliteral">&quot;/&quot;</span> + std::string(<a class="code hl_define" href="_daemon_8h.html#a62b075ec29b7b301c68f539d8aafd029">ROOT_DIR</a>);</div>
-<div class="line"><span class="lineno">   22</span>}</div>
-<div class="ttc" id="a_daemon_8h_html_a62b075ec29b7b301c68f539d8aafd029"><div class="ttname"><a href="_daemon_8h.html#a62b075ec29b7b301c68f539d8aafd029">ROOT_DIR</a></div><div class="ttdeci">#define ROOT_DIR</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00014">Daemon.h:14</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00016">16</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>                       {</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">return</span> std::string(getenv(<span class="stringliteral">&quot;HOME&quot;</span>)) + <span class="stringliteral">&quot;/&quot;</span> + std::string(<a class="code hl_define" href="_daemon_8h.html#a62b075ec29b7b301c68f539d8aafd029">ROOT_DIR</a>);</div>
+<div class="line"><span class="lineno">   18</span>}</div>
+<div class="ttc" id="a_daemon_8h_html_a62b075ec29b7b301c68f539d8aafd029"><div class="ttname"><a href="_daemon_8h.html#a62b075ec29b7b301c68f539d8aafd029">ROOT_DIR</a></div><div class="ttdeci">#define ROOT_DIR</div><div class="ttdef"><b>Definition</b> <a href="_daemon_8h_source.html#l00010">Daemon.h:10</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

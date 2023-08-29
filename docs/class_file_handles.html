@@ -118,7 +118,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_file_handles_8h_source.html#l00032">32</a> of file <a class="el" href="_file_handles_8h_source.html">FileHandles.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8h_source.html#l00028">28</a> of file <a class="el" href="_file_handles_8h_source.html">FileHandles.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="abb716e8d474e7c3754c7eba3fb93fc3c" name="abb716e8d474e7c3754c7eba3fb93fc3c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#abb716e8d474e7c3754c7eba3fb93fc3c">&#9670;&#160;</a></span>FileHandles()</h2>
@@ -135,11 +135,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00008">8</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>                         {</div>
-<div class="line"><span class="lineno">    9</span>    <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>.fill(<span class="keyword">nullptr</span>);</div>
-<div class="line"><span class="lineno">   10</span>}</div>
-<div class="ttc" id="aclass_file_handles_html_a23f2b8b00086fa8aa76bc4e8000b7803"><div class="ttname"><a href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">FileHandles::handles_p</a></div><div class="ttdeci">std::array&lt; handle *, MAX_FILE_HANDLES &gt; handles_p</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00044">FileHandles.h:44</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00004">4</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    4</span>                         {</div>
+<div class="line"><span class="lineno">    5</span>    <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>.fill(<span class="keyword">nullptr</span>);</div>
+<div class="line"><span class="lineno">    6</span>}</div>
+<div class="ttc" id="aclass_file_handles_html_a23f2b8b00086fa8aa76bc4e8000b7803"><div class="ttname"><a href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">FileHandles::handles_p</a></div><div class="ttdeci">std::array&lt; handle *, MAX_FILE_HANDLES &gt; handles_p</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00040">FileHandles.h:40</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -158,14 +158,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00012">12</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>                          {</div>
-<div class="line"><span class="lineno">   13</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
-<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span>){</div>
-<div class="line"><span class="lineno">   15</span>            <span class="keyword">delete</span> hp;</div>
-<div class="line"><span class="lineno">   16</span>        }</div>
-<div class="line"><span class="lineno">   17</span>    }</div>
-<div class="line"><span class="lineno">   18</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00008">8</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                          {</div>
+<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
+<div class="line"><span class="lineno">   10</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span>){</div>
+<div class="line"><span class="lineno">   11</span>            <span class="keyword">delete</span> hp;</div>
+<div class="line"><span class="lineno">   12</span>        }</div>
+<div class="line"><span class="lineno">   13</span>    }</div>
+<div class="line"><span class="lineno">   14</span>}</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -208,23 +208,23 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00020">20</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                                           {</div>
-<div class="line"><span class="lineno">   21</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
-<div class="line"><span class="lineno">   22</span>        <span class="keywordflow">if</span>(hp == <span class="keyword">nullptr</span>){</div>
-<div class="line"><span class="lineno">   23</span>            hp = <span class="keyword">new</span> <a class="code hl_struct" href="structhandle.html">handle</a>;</div>
-<div class="line"><span class="lineno">   24</span>            hp-&gt;<a class="code hl_variable" href="structhandle.html#af0c3cc094556bdefc6d06fb4b1206d3b">fd</a> = fd;</div>
-<div class="line"><span class="lineno">   25</span>            hp-&gt;owner = owner;</div>
-<div class="line"><span class="lineno">   26</span>            hp-&gt;position = 0;</div>
-<div class="line"><span class="lineno">   27</span>            hp-&gt;flags = flags;</div>
-<div class="line"><span class="lineno">   28</span>            hp-&gt;flags &amp;= ~NOTIFY_FLAG;</div>
-<div class="line"><span class="lineno">   29</span>            std::strcpy(hp-&gt;name, name);</div>
-<div class="line"><span class="lineno">   30</span>            <span class="keywordflow">break</span>;</div>
-<div class="line"><span class="lineno">   31</span>        }</div>
-<div class="line"><span class="lineno">   32</span>    }</div>
-<div class="line"><span class="lineno">   33</span>}</div>
-<div class="ttc" id="astructhandle_html"><div class="ttname"><a href="structhandle.html">handle</a></div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00023">FileHandles.h:23</a></div></div>
-<div class="ttc" id="astructhandle_html_af0c3cc094556bdefc6d06fb4b1206d3b"><div class="ttname"><a href="structhandle.html#af0c3cc094556bdefc6d06fb4b1206d3b">handle::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00025">FileHandles.h:25</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00016">16</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                           {</div>
+<div class="line"><span class="lineno">   17</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
+<div class="line"><span class="lineno">   18</span>        <span class="keywordflow">if</span>(hp == <span class="keyword">nullptr</span>){</div>
+<div class="line"><span class="lineno">   19</span>            hp = <span class="keyword">new</span> <a class="code hl_struct" href="structhandle.html">handle</a>;</div>
+<div class="line"><span class="lineno">   20</span>            hp-&gt;<a class="code hl_variable" href="structhandle.html#af0c3cc094556bdefc6d06fb4b1206d3b">fd</a> = fd;</div>
+<div class="line"><span class="lineno">   21</span>            hp-&gt;owner = owner;</div>
+<div class="line"><span class="lineno">   22</span>            hp-&gt;position = 0;</div>
+<div class="line"><span class="lineno">   23</span>            hp-&gt;flags = flags;</div>
+<div class="line"><span class="lineno">   24</span>            hp-&gt;flags &amp;= ~NOTIFY_FLAG;</div>
+<div class="line"><span class="lineno">   25</span>            std::strcpy(hp-&gt;name, name);</div>
+<div class="line"><span class="lineno">   26</span>            <span class="keywordflow">break</span>;</div>
+<div class="line"><span class="lineno">   27</span>        }</div>
+<div class="line"><span class="lineno">   28</span>    }</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="astructhandle_html"><div class="ttname"><a href="structhandle.html">handle</a></div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00019">FileHandles.h:19</a></div></div>
+<div class="ttc" id="astructhandle_html_af0c3cc094556bdefc6d06fb4b1206d3b"><div class="ttname"><a href="structhandle.html#af0c3cc094556bdefc6d06fb4b1206d3b">handle::fd</a></div><div class="ttdeci">fd_type fd</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00021">FileHandles.h:21</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -261,13 +261,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00043">43</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   43</span>                                             {</div>
-<div class="line"><span class="lineno">   44</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">   45</span>    h-&gt;flags |= <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>;</div>
-<div class="line"><span class="lineno">   46</span>}</div>
-<div class="ttc" id="a_file_handles_8h_html_ae0353b6caf99d7c3f7597e469c638178"><div class="ttname"><a href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a></div><div class="ttdeci">#define NOTIFY_FLAG</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00019">FileHandles.h:19</a></div></div>
-<div class="ttc" id="aclass_file_handles_html_a4ebc3f7be0e760cb757f3dbfd37c715b"><div class="ttname"><a href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">FileHandles::get_handle_by_fd</a></div><div class="ttdeci">handle * get_handle_by_fd(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00060">FileHandles.cpp:60</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00039">39</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   39</span>                                             {</div>
+<div class="line"><span class="lineno">   40</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">   41</span>    h-&gt;flags |= <a class="code hl_define" href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a>;</div>
+<div class="line"><span class="lineno">   42</span>}</div>
+<div class="ttc" id="a_file_handles_8h_html_ae0353b6caf99d7c3f7597e469c638178"><div class="ttname"><a href="_file_handles_8h.html#ae0353b6caf99d7c3f7597e469c638178">NOTIFY_FLAG</a></div><div class="ttdeci">#define NOTIFY_FLAG</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8h_source.html#l00015">FileHandles.h:15</a></div></div>
+<div class="ttc" id="aclass_file_handles_html_a4ebc3f7be0e760cb757f3dbfd37c715b"><div class="ttname"><a href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">FileHandles::get_handle_by_fd</a></div><div class="ttdeci">handle * get_handle_by_fd(fd_type fd)</div><div class="ttdef"><b>Definition</b> <a href="_file_handles_8cpp_source.html#l00056">FileHandles.cpp:56</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -313,16 +313,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00060">60</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   60</span>                                                {</div>
-<div class="line"><span class="lineno">   61</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
-<div class="line"><span class="lineno">   62</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span> &amp;&amp; hp-&gt;fd == fd){</div>
-<div class="line"><span class="lineno">   63</span>            <span class="keywordflow">return</span> hp;</div>
-<div class="line"><span class="lineno">   64</span>        }</div>
-<div class="line"><span class="lineno">   65</span>    }</div>
-<div class="line"><span class="lineno">   66</span>    <a class="code hl_struct" href="structhandle.html">handle</a>* nullHandle = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">return</span> nullHandle;</div>
-<div class="line"><span class="lineno">   68</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00056">56</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   56</span>                                                {</div>
+<div class="line"><span class="lineno">   57</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
+<div class="line"><span class="lineno">   58</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span> &amp;&amp; hp-&gt;fd == fd){</div>
+<div class="line"><span class="lineno">   59</span>            <span class="keywordflow">return</span> hp;</div>
+<div class="line"><span class="lineno">   60</span>        }</div>
+<div class="line"><span class="lineno">   61</span>    }</div>
+<div class="line"><span class="lineno">   62</span>    <a class="code hl_struct" href="structhandle.html">handle</a>* nullHandle = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">return</span> nullHandle;</div>
+<div class="line"><span class="lineno">   64</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -385,16 +385,16 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00070">70</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   70</span>                                           {</div>
-<div class="line"><span class="lineno">   71</span>    std::vector&lt;handle*&gt; handles;</div>
-<div class="line"><span class="lineno">   72</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
-<div class="line"><span class="lineno">   73</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span>){</div>
-<div class="line"><span class="lineno">   74</span>            handles.push_back(hp);</div>
-<div class="line"><span class="lineno">   75</span>        }</div>
-<div class="line"><span class="lineno">   76</span>    }</div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">return</span> handles;</div>
-<div class="line"><span class="lineno">   78</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00066">66</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   66</span>                                           {</div>
+<div class="line"><span class="lineno">   67</span>    std::vector&lt;handle*&gt; handles;</div>
+<div class="line"><span class="lineno">   68</span>    <span class="keywordflow">for</span>(<span class="keyword">auto</span> &amp; hp : <a class="code hl_variable" href="class_file_handles.html#a23f2b8b00086fa8aa76bc4e8000b7803">handles_p</a>){</div>
+<div class="line"><span class="lineno">   69</span>        <span class="keywordflow">if</span>(hp != <span class="keyword">nullptr</span>){</div>
+<div class="line"><span class="lineno">   70</span>            handles.push_back(hp);</div>
+<div class="line"><span class="lineno">   71</span>        }</div>
+<div class="line"><span class="lineno">   72</span>    }</div>
+<div class="line"><span class="lineno">   73</span>    <span class="keywordflow">return</span> handles;</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -443,13 +443,13 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00053">53</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   53</span>                                                       {</div>
-<div class="line"><span class="lineno">   54</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">if</span>(h-&gt;position + offset &gt;= 0){</div>
-<div class="line"><span class="lineno">   56</span>        h-&gt;position += offset;</div>
-<div class="line"><span class="lineno">   57</span>    }</div>
-<div class="line"><span class="lineno">   58</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00049">49</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   49</span>                                                       {</div>
+<div class="line"><span class="lineno">   50</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">   51</span>    <span class="keywordflow">if</span>(h-&gt;position + offset &gt;= 0){</div>
+<div class="line"><span class="lineno">   52</span>        h-&gt;position += offset;</div>
+<div class="line"><span class="lineno">   53</span>    }</div>
+<div class="line"><span class="lineno">   54</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -496,14 +496,14 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00035">35</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                          {</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_struct" href="structhandle.html">handle</a>* h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (h != <span class="keyword">nullptr</span>){</div>
-<div class="line"><span class="lineno">   38</span>        <span class="keyword">delete</span> h;</div>
-<div class="line"><span class="lineno">   39</span>        h = <span class="keyword">nullptr</span>;</div>
-<div class="line"><span class="lineno">   40</span>    }</div>
-<div class="line"><span class="lineno">   41</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00031">31</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                          {</div>
+<div class="line"><span class="lineno">   32</span>    <a class="code hl_struct" href="structhandle.html">handle</a>* h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">   33</span>    <span class="keywordflow">if</span> (h != <span class="keyword">nullptr</span>){</div>
+<div class="line"><span class="lineno">   34</span>        <span class="keyword">delete</span> h;</div>
+<div class="line"><span class="lineno">   35</span>        h = <span class="keyword">nullptr</span>;</div>
+<div class="line"><span class="lineno">   36</span>    }</div>
+<div class="line"><span class="lineno">   37</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -547,11 +547,11 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00048">48</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                                {</div>
-<div class="line"><span class="lineno">   49</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
-<div class="line"><span class="lineno">   50</span>    h-&gt;flags &amp;= ~NOTIFY_FLAG;</div>
-<div class="line"><span class="lineno">   51</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8cpp_source.html#l00044">44</a> of file <a class="el" href="_file_handles_8cpp_source.html">FileHandles.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                {</div>
+<div class="line"><span class="lineno">   45</span>    <span class="keyword">auto</span> h = <a class="code hl_function" href="class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b">get_handle_by_fd</a>(fd);</div>
+<div class="line"><span class="lineno">   46</span>    h-&gt;flags &amp;= ~NOTIFY_FLAG;</div>
+<div class="line"><span class="lineno">   47</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -602,7 +602,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_file_handles_8h_source.html#l00044">44</a> of file <a class="el" href="_file_handles_8h_source.html">FileHandles.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_file_handles_8h_source.html#l00040">40</a> of file <a class="el" href="_file_handles_8h_source.html">FileHandles.h</a>.</p>
 
 </div>
 </div>

@@ -108,7 +108,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00033">33</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00029">29</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ac57764f6f70082cff11166ef46c53295" name="ac57764f6f70082cff11166ef46c53295"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ac57764f6f70082cff11166ef46c53295">&#9670;&#160;</a></span>Semaphores()</h2>
@@ -134,25 +134,25 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00058">58</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   58</span>                               {</div>
-<div class="line"><span class="lineno">   59</span>    key_t sems_key = ftok(<a class="code hl_function" href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a>().c_str(), 1);</div>
-<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (sems_key == (key_t) -1) {</div>
-<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;ftok() for sems failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00054">54</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   54</span>                               {</div>
+<div class="line"><span class="lineno">   55</span>    key_t sems_key = ftok(<a class="code hl_function" href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a>().c_str(), 1);</div>
+<div class="line"><span class="lineno">   56</span>    <span class="keywordflow">if</span> (sems_key == (key_t) -1) {</div>
+<div class="line"><span class="lineno">   57</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;ftok() for sems failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   58</span>    }</div>
+<div class="line"><span class="lineno">   59</span>    <a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a> = semget(sems_key, <a class="code hl_define" href="_ipc_8h.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a>, 0666 | flag);</div>
+<div class="line"><span class="lineno">   60</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a> == -1) {</div>
+<div class="line"><span class="lineno">   61</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;semget() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
 <div class="line"><span class="lineno">   62</span>    }</div>
-<div class="line"><span class="lineno">   63</span>    <a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a> = semget(sems_key, <a class="code hl_define" href="_ipc_8h.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a>, 0666 | flag);</div>
-<div class="line"><span class="lineno">   64</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a> == -1) {</div>
-<div class="line"><span class="lineno">   65</span>        <span class="keywordflow">throw</span> <a class="code hl_class" href="class_library_exception.html">LibraryException</a>(<span class="stringliteral">&quot;semget() failed&quot;</span>, __FUNCTION__, __LINE__);</div>
+<div class="line"><span class="lineno">   63</span>    <span class="keywordflow">if</span>(flag &amp; IPC_CREAT){</div>
+<div class="line"><span class="lineno">   64</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> initial_sem_values[3] = {1, 0, 0};</div>
+<div class="line"><span class="lineno">   65</span>        semctl(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, 0, SETALL, initial_sem_values);</div>
 <div class="line"><span class="lineno">   66</span>    }</div>
-<div class="line"><span class="lineno">   67</span>    <span class="keywordflow">if</span>(flag &amp; IPC_CREAT){</div>
-<div class="line"><span class="lineno">   68</span>        <span class="keywordtype">unsigned</span> <span class="keywordtype">short</span> initial_sem_values[3] = {1, 0, 0};</div>
-<div class="line"><span class="lineno">   69</span>        semctl(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, 0, SETALL, initial_sem_values);</div>
-<div class="line"><span class="lineno">   70</span>    }</div>
-<div class="line"><span class="lineno">   71</span>}</div>
-<div class="ttc" id="a_ipc_8cpp_html_af6bfe3d4834a14652246db692a7a912d"><div class="ttname"><a href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a></div><div class="ttdeci">std::string getRootPath()</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00020">Ipc.cpp:20</a></div></div>
-<div class="ttc" id="a_ipc_8h_html_af343e53b872e3a1b24ce1697e0cfd28c"><div class="ttname"><a href="_ipc_8h.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a></div><div class="ttdeci">#define N_SEMS</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00013">Ipc.h:13</a></div></div>
+<div class="line"><span class="lineno">   67</span>}</div>
+<div class="ttc" id="a_ipc_8cpp_html_af6bfe3d4834a14652246db692a7a912d"><div class="ttname"><a href="_ipc_8cpp.html#af6bfe3d4834a14652246db692a7a912d">getRootPath</a></div><div class="ttdeci">std::string getRootPath()</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00016">Ipc.cpp:16</a></div></div>
+<div class="ttc" id="a_ipc_8h_html_af343e53b872e3a1b24ce1697e0cfd28c"><div class="ttname"><a href="_ipc_8h.html#af343e53b872e3a1b24ce1697e0cfd28c">N_SEMS</a></div><div class="ttdeci">#define N_SEMS</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00009">Ipc.h:9</a></div></div>
 <div class="ttc" id="aclass_library_exception_html"><div class="ttname"><a href="class_library_exception.html">LibraryException</a></div><div class="ttdef"><b>Definition</b> <a href="_library_exception_8h_source.html#l00007">LibraryException.h:7</a></div></div>
-<div class="ttc" id="aclass_semaphores_html_a35e93d4479735ed79563a4603141d0cd"><div class="ttname"><a href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">Semaphores::sems_id</a></div><div class="ttdeci">int sems_id</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00044">Ipc.h:44</a></div></div>
+<div class="ttc" id="aclass_semaphores_html_a35e93d4479735ed79563a4603141d0cd"><div class="ttname"><a href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">Semaphores::sems_id</a></div><div class="ttdeci">int sems_id</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8h_source.html#l00040">Ipc.h:40</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -183,11 +183,11 @@ Here is the call graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00080">80</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   80</span>                                                  {</div>
-<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, -1, 0);</div>
-<div class="line"><span class="lineno">   82</span>}</div>
-<div class="ttc" id="a_ipc_8cpp_html_abfb35139bc75adc944b85393a647c929"><div class="ttname"><a href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a></div><div class="ttdeci">void addToSemaphore(int sems_id, unsigned short sem_num, short diff, short flag)</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00073">Ipc.cpp:73</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00076">76</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                                  {</div>
+<div class="line"><span class="lineno">   77</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, -1, 0);</div>
+<div class="line"><span class="lineno">   78</span>}</div>
+<div class="ttc" id="a_ipc_8cpp_html_abfb35139bc75adc944b85393a647c929"><div class="ttname"><a href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a></div><div class="ttdeci">void addToSemaphore(int sems_id, unsigned short sem_num, short diff, short flag)</div><div class="ttdef"><b>Definition</b> <a href="_ipc_8cpp_source.html#l00069">Ipc.cpp:69</a></div></div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -403,10 +403,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00084">84</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                                                          {</div>
-<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, -1, SEM_UNDO);</div>
-<div class="line"><span class="lineno">   86</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00080">80</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   80</span>                                                          {</div>
+<div class="line"><span class="lineno">   81</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, -1, SEM_UNDO);</div>
+<div class="line"><span class="lineno">   82</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -620,10 +620,10 @@ Here is the caller graph for this function:</div>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00088">88</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>                                                    {</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, 1, SEM_UNDO);</div>
-<div class="line"><span class="lineno">   90</span>}</div>
+<p class="definition">Definition at line <a class="el" href="_ipc_8cpp_source.html#l00084">84</a> of file <a class="el" href="_ipc_8cpp_source.html">Ipc.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   84</span>                                                    {</div>
+<div class="line"><span class="lineno">   85</span>    <a class="code hl_function" href="_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929">addToSemaphore</a>(<a class="code hl_variable" href="class_semaphores.html#a35e93d4479735ed79563a4603141d0cd">sems_id</a>, sem_num, 1, SEM_UNDO);</div>
+<div class="line"><span class="lineno">   86</span>}</div>
 </div><!-- fragment --><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -844,7 +844,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00044">44</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
+<p class="definition">Definition at line <a class="el" href="_ipc_8h_source.html#l00040">40</a> of file <a class="el" href="_ipc_8h_source.html">Ipc.h</a>.</p>
 
 </div>
 </div>
