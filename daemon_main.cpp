@@ -1,7 +1,3 @@
-//
-// Created by kuba on 07.06.23.
-//
-
 #include <iostream>
 #include <unistd.h>
 #include <sys/stat.h>

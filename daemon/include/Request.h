@@ -1,7 +1,3 @@
-//
-// Created by szw on 15.05.23.
-//
-
 #ifndef FILESYSTEM_REQUEST_H
 #define FILESYSTEM_REQUEST_H
 

@@ -1,7 +1,3 @@
-//
-// Created by kuba on 07.06.23.
-//
-
 #ifndef DAEMON_FILEHANDLES_H
 #define DAEMON_FILEHANDLES_H
 

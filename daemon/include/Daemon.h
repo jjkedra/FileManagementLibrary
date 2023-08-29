@@ -1,7 +1,3 @@
-//
-// Created by Jan Kędra on 12/05/2023.
-//
-
 #ifndef FILESYSTEM_DAEMON_H
 #define FILESYSTEM_DAEMON_H
 

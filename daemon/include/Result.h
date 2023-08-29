@@ -1,7 +1,3 @@
-//
-// Created by szw on 15.05.23.
-//
-
 #ifndef FILESYSTEM_RESULT_H
 #define FILESYSTEM_RESULT_H
 

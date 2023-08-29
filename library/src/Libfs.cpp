@@ -1,7 +1,3 @@
-//
-// Created by Jan Kędra on 15/05/2023.
-//
-
 #include <cstring>
 #include "../include/Libfs.h"
 #include "../include/LibraryException.h"

@@ -1,7 +1,3 @@
-//
-// Created by Lidia on 6/9/2023.
-//
-
 #include <iostream>
 #include <csignal>
 #include "../library/include/Libfs.h"

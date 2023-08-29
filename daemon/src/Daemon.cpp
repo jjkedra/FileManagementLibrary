@@ -1,7 +1,3 @@
-//
-// Created by Jan Kędra on 12/05/2023.
-//
-
 #include <iostream>
 #include <unistd.h>
 #include <sys/stat.h>

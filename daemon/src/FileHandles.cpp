@@ -1,7 +1,3 @@
-//
-// Created by kuba on 07.06.23.
-//
-
 #include <FileHandles.h>
 #include <cstring>
 

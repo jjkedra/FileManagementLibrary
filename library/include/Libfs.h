@@ -1,7 +1,3 @@
-//
-// Created by Jan Kędra on 15/05/2023.
-//
-
 #ifndef FILESYSTEM_LIBFS_H
 #define FILESYSTEM_LIBFS_H
 

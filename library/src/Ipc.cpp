@@ -1,7 +1,3 @@
-//
-// Created by szw on 24.05.23.
-//
-
 #include <sys/ipc.h>
 #include <sys/sem.h>
 #include <sys/shm.h>

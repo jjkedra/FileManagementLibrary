@@ -1,7 +1,3 @@
-//
-// Created by szw on 24.05.23.
-//
-
 #ifndef FILESYSTEM_IPC_H
 #define FILESYSTEM_IPC_H
 
