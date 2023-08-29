@@ -10,4 +10,7 @@ This project implements simple file management library including unit and integr
 7. Writing to files
 8. Changing the cursor position in files
 9. Closing files
+
 Additionaly it returns the error code analogically to system functions. Additionaly library and server communicate via shared memory with semaphores help and it will notify the process with open fd of a given file when that file will be changed or removed.
+
+Doxygen generated documentation [here](https://jjkedra.github.io/FileManagementLibrary/files.html)
