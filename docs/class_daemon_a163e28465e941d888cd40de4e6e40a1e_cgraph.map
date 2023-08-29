@@ -1,0 +1,9 @@
+<map id="Daemon::execute_close" name="Daemon::execute_close">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,35,168,60"/>
+<area shape="rect" id="Node000002" href="$class_daemon.html#a251486969c581b48a506b95023dc0595" title=" " alt="" coords="216,5,357,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="168,33,201,28,202,33,168,38"/>
+<area shape="rect" id="Node000003" href="$class_file_handles.html#a2552cfa68caec01d5f1f1b9b96b825a9" title=" " alt="" coords="216,55,357,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="168,56,201,61,200,66,168,62"/>
+<area shape="rect" id="Node000004" href="$class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b" title=" " alt="" coords="405,55,566,96"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="358,73,390,73,390,78,358,78"/>
+</map>

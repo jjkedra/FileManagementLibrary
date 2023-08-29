@@ -1,0 +1,7 @@
+<map id="Daemon::execute_open" name="Daemon::execute_open">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,165,56"/>
+<area shape="rect" id="Node000002" href="$class_file_handles.html#a6ca7ab1e53f138e8ce9913d79123ef30" title=" " alt="" coords="213,5,377,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="165,31,198,27,198,33,166,36"/>
+<area shape="rect" id="Node000003" href="$class_daemon.html#aa92151add28def86227bc6c31efd269d" title=" " alt="" coords="226,55,364,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="166,50,212,55,211,61,165,55"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="Daemon::execute_unlink" name="Daemon::execute_unlink">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,31,171,56"/>
+<area shape="rect" id="Node000002" href="$class_daemon.html#a5f2403caf311c11eee6dad11162ea00b" title=" " alt="" coords="235,5,379,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="171,31,220,25,221,31,171,37"/>
+<area shape="rect" id="Node000003" href="$class_daemon.html#af717353d117d073a3275803c4e1d4fdf" title=" " alt="" coords="219,55,395,80"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,50,204,54,204,59,171,55"/>
+<area shape="rect" id="Node000004" href="$class_file_handles.html#a8509e524b38a3c81cda841b26b2c528f" title=" " alt="" coords="443,55,607,80"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="395,65,428,65,428,70,395,70"/>
+</map>

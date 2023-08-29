@@ -1,0 +1,40 @@
+PROJECT_NAME = "Library for file management "
+PROJECT_NUMBER = 1.0
+PROJECT_BRIEF = "Simple library written for file management where the file struture is flat - project includes unit and integration tests as well as proper CMakeLists structure"
+OUTPUT_LANGUAGE = English
+
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_PACKAGE        = YES
+EXTRACT_STATIC         = YES
+SOURCE_BROWSER         = YES
+INLINE_SOURCES         = YES
+CLASS_DIAGRAMS         = YES
+HIDE_UNDOC_RELATIONS   = NO
+HAVE_DOT               = YES
+UML_LOOK               = YES
+UML_LIMIT_NUM_FIELDS   = 50
+UML_LIMIT_MEMBER_SIZE  = 30
+HAVE_DOT               = YES
+CALL_GRAPH             = YES
+CALLER_GRAPH           = YES
+DOT_GRAPH_MAX_NODES    = 100
+MAX_DOT_GRAPH_DEPTH    = 0
+DOT_TRANSPARENT        = YES
+DOT_MULTI_TARGETS      = YES
+GENERATE_LATEX         = NO
+HTML_OUTPUT = ./docs/
+CREATE_SUBDIRS = NO
+
+# Specify the input directories for Doxygen
+INPUT = daemon \
+        library \
+	tests \
+
+# Set the file patterns for each input directory
+FILE_PATTERNS = *.h \
+                *.cpp \
+
+
+# Set the recursive option to search subdirectories
+RECURSIVE = YES

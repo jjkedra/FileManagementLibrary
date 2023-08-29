@@ -1,0 +1,9 @@
+<map id="handle" name="handle">
+<area shape="rect" id="Node000001" title=" " alt="" coords="77,164,128,229"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,5,32,71"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="25,70,32,104,47,138,67,163,62,167,42,141,27,106,19,71"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="82,5,123,71"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="105,70,105,147,100,147,100,70"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="161,5,199,71"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="177,71,168,106,153,141,141,159,136,156,148,138,163,104,172,70"/>
+</map>

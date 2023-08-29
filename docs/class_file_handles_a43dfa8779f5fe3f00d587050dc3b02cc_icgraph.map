@@ -1,0 +1,11 @@
+<map id="FileHandles::remove_notification" name="FileHandles::remove_notification">
+<area shape="rect" id="Node000001" title=" " alt="" coords="895,5,1036,46"/>
+<area shape="rect" id="Node000002" href="$class_daemon.html#a0d18472139823a8d9be4f79925b030d8" title=" " alt="" coords="691,13,847,39"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="879,28,847,28,847,23,879,23"/>
+<area shape="rect" id="Node000003" href="$class_daemon.html#a0dc359c0b504eb3df90497911cee8082" title=" " alt="" coords="466,13,643,39"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="677,28,644,28,644,23,677,23"/>
+<area shape="rect" id="Node000004" href="$class_daemon.html#a42229b8cd2751ac1f123f539450f4e81" title=" " alt="" coords="244,13,418,39"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="452,28,419,28,419,23,452,23"/>
+<area shape="rect" id="Node000005" href="$class_daemon.html#a359a1695aa10421a368325327c3cd477" title=" " alt="" coords="5,5,196,46"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="229,28,196,28,196,23,229,23"/>
+</map>

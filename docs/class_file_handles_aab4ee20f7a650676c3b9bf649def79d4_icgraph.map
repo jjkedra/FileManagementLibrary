@@ -1,0 +1,12 @@
+<map id="FileHandles::modify_offset" name="FileHandles::modify_offset">
+<area shape="rect" id="Node000001" title=" " alt="" coords="673,23,811,64"/>
+<area shape="rect" id="Node000002" href="$class_daemon.html#a288fe2ef718e3ec836ff37c225217b62" title=" " alt="" coords="468,5,624,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="658,35,624,31,625,26,659,30"/>
+<area shape="rect" id="Node000005" href="$class_daemon.html#ab41a738f5a086cfdbf22b7c6235f4d01" title=" " alt="" coords="466,55,625,80"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="659,56,626,60,626,55,658,51"/>
+<area shape="rect" id="Node000003" href="$class_daemon.html#a42229b8cd2751ac1f123f539450f4e81" title=" " alt="" coords="244,31,418,56"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="453,32,419,36,418,31,453,26"/>
+<area shape="rect" id="Node000004" href="$class_daemon.html#a359a1695aa10421a368325327c3cd477" title=" " alt="" coords="5,23,196,64"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="229,46,196,46,196,41,229,41"/>
+<area shape="poly" id="edge5_Node000005_Node000003" title=" " alt="" coords="451,60,418,56,419,51,452,54"/>
+</map>

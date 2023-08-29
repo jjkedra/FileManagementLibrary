@@ -1,0 +1,11 @@
+<map id="Daemon::execute_write" name="Daemon::execute_write">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,70,165,96"/>
+<area shape="rect" id="Node000002" href="$class_file_handles.html#a4ebc3f7be0e760cb757f3dbfd37c715b" title=" " alt="" coords="220,5,382,46"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="136,67,207,48,208,53,137,72"/>
+<area shape="rect" id="Node000003" href="$class_daemon.html#a3092b9b39fcb6d83bb8175ce60ca3ebc" title=" " alt="" coords="232,70,370,96"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="165,80,217,80,217,86,165,86"/>
+<area shape="rect" id="Node000004" href="$class_daemon.html#af717353d117d073a3275803c4e1d4fdf" title=" " alt="" coords="213,120,389,145"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="145,94,228,113,227,118,144,99"/>
+<area shape="rect" id="Node000005" href="$class_file_handles.html#a8509e524b38a3c81cda841b26b2c528f" title=" " alt="" coords="437,120,601,145"/>
+<area shape="poly" id="edge4_Node000004_Node000005" title=" " alt="" coords="389,130,422,130,422,135,389,135"/>
+</map>

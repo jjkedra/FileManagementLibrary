@@ -1,0 +1,9 @@
+<map id="daemon/include/DaemonException.h" name="daemon/include/DaemonException.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="17,5,251,31"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,79,84,105"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="120,34,72,72,69,68,117,29"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="107,79,161,105"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="137,31,137,64,131,64,131,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="185,79,245,105"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="149,30,192,67,189,71,146,34"/>
+</map>

@@ -1,0 +1,21 @@
+<map id="Libfs::close" name="Libfs::close">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,129,94,155"/>
+<area shape="rect" id="Node000002" href="$class_libfs.html#a954ec7bd5c0d6ec96df1f90ffad54e33" title=" " alt="" coords="142,129,292,155"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="94,140,127,140,127,145,94,145"/>
+<area shape="rect" id="Node000003" href="$class_shared_memory.html#aaab217c71d99a5b621b9784bc84e1aed" title=" " alt="" coords="355,5,510,31"/>
+<area shape="poly" id="edge2_Node000002_Node000003" title=" " alt="" coords="229,127,274,84,305,60,339,40,351,34,353,39,341,45,308,65,278,88,233,131"/>
+<area shape="rect" id="Node000004" href="$class_shared_memory.html#a44ece5752ebfdc738043442d5b20a621" title=" " alt="" coords="340,55,524,80"/>
+<area shape="poly" id="edge3_Node000002_Node000004" title=" " alt="" coords="246,126,339,89,361,82,362,87,341,94,248,131"/>
+<area shape="rect" id="Node000005" href="$class_shared_memory.html#a8be14d5bfc34bcad3b3688aec7af2099" title=" " alt="" coords="346,104,519,130"/>
+<area shape="poly" id="edge4_Node000002_Node000005" title=" " alt="" coords="292,131,330,126,331,131,293,136"/>
+<area shape="rect" id="Node000006" href="$class_semaphores.html#a486efafd286f4eaac70fb937d28f8a57" title=" " alt="" coords="369,153,495,179"/>
+<area shape="poly" id="edge5_Node000002_Node000006" title=" " alt="" coords="293,148,354,155,354,160,292,153"/>
+<area shape="rect" id="Node000008" href="$class_semaphores.html#ad871222810cdce5f965c3afdf6556586" title=" " alt="" coords="340,203,524,228"/>
+<area shape="poly" id="edge7_Node000002_Node000008" title=" " alt="" coords="249,153,341,189,362,196,361,201,339,194,247,158"/>
+<area shape="rect" id="Node000009" href="$class_semaphores.html#aabdf1b154084bd8433f338f2195ea1d2" title=" " alt="" coords="362,252,502,278"/>
+<area shape="poly" id="edge9_Node000002_Node000009" title=" " alt="" coords="233,154,278,196,308,219,341,238,353,244,351,249,339,243,305,223,275,200,229,157"/>
+<area shape="rect" id="Node000007" href="$_ipc_8cpp.html#abfb35139bc75adc944b85393a647c929" title=" " alt="" coords="572,203,695,228"/>
+<area shape="poly" id="edge6_Node000006_Node000007" title=" " alt="" coords="488,177,564,196,563,201,487,182"/>
+<area shape="poly" id="edge8_Node000008_Node000007" title=" " alt="" coords="525,213,558,213,558,218,525,218"/>
+<area shape="poly" id="edge10_Node000009_Node000007" title=" " alt="" coords="487,249,563,230,564,235,488,254"/>
+</map>
